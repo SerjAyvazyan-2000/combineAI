@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Qwen — мощный AI-ассистент для генерации изображений, поиска, программирования и глубокого анализа. Задайте вопрос и получите точный, быстрый и полезный ответ."
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LLAMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body {
+      background: #ffffff;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="d-header fade-top">
+        <div class="container">
+          <div class="d-header-body G-align-center">
+            <a href="index.html" class="header-logo">
+              <img
+                src="assets/images/Llogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="93"
+                height="26"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <a href="#" class="d-btn-register G-align-center">
+              <i class="icon icon-stash_arrow-up"></i>
+              <span
+                >Регистрация <span class="desktop-block">бесплатно</span></span
+              >
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="l-hero-section">
+          <div class="container">
+            <div class="l-hero-body">
+              <div class="l-hero-titles fade-left">
+                <h1>
+                  <span class="text-blue text-wrap">Llama 4</span>
+                  <span class="mobile-text-wrap">Непревзойдённая скорость</span>
+                  и эффективность
+                </h1>
+                <p>
+                  <span class="mobile-text-wrap"
+                    >Перед вами самое удобное поколение</span
+                  >
+                  Llama: нейросеть,
+                  <span class="desktop-text-wrap"
+                    >основанная
+                    <span class="mobile-text-wrap"
+                      >на сочетании опыта экспертов,</span
+                    ></span
+                  >
+                  <span class="mobile-text-wrap"
+                    >расширенные возможности и лучшие</span
+                  >
+                  в отрасли понимание контента
+                </p>
+
+                <a href="#" class="btn-primary l-hero-btn G-align-center">
+                  <i class="icon icon-stash_arrow-up"></i>
+                  <span>Регистрация бесплатно</span>
+                </a>
+              </div>
+
+              <div class="l-hero-picture">
+                <picture>
+                  <source
+                    srcset="assets/images/lHeroPictureMobiile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/lHeroPicture.webp"
+                    alt="photo"
+                    loading="eager"
+                    fetchpriority="high"
+                    width="549"
+                    height="367"
+                    style="width: 100%; height: auto"
+                  />
+                </picture>
+              </div>
+
+              <div class="l-hero-bg">
+                <picture>
+                  <source
+                    srcset="assets/images/lHeroBgMobiile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/lHeroBg.webp"
+                    alt="photo"
+                    loading="eager"
+                    fetchpriority="high"
+                    width="549"
+                    height="367"
+                    style="width: 100%; height: auto"
+                  />
+                </picture>
+              </div>
+
+              <div class="l-hero-bottom-clues fade-bottom G-center">
+                <p>Узнайте больше о модели</p>
+                <a href="#">
+                  <div><i class="icon icon-lArrowLeft"></i></div>
+                  <span>Читать</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-models-section e-section">
+          <div class="container">
+            <div class="l-models-body">
+              <div class="l-models-titles fade-top">
+                <h2 class="e-section-title">
+                  <span class="mobile-text-wrap">Создавайте</span> с помощью
+                  <span class="text-blue">Llama 4</span>
+                </h2>
+                <p class="e-section-text">
+                  Мы оптимизировали модели для упрощения развёртывания,
+                  повышения
+                  <span class="desktop-text-wrap"
+                    >экономической эффективности и масштабируемости до
+                    миллиардов</span
+                  >
+                  пользователей. Нам не терпится увидеть, что вы создадите
+                </p>
+              </div>
+
+              <div class="l-models-swiper-block fade-bottom d-block-cnt">
+                <div class="l-models-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="l-models-slide G-flex-column">
+                        <h2 class="l-block-title">Лама API</h2>
+                        <p class="l-block-text">
+                          От идеи до развертывания приложения — за считаные
+                          минуты
+                        </p>
+
+                        <a
+                          href="#"
+                          class="btn-primary l-models-btn G-align-center"
+                        >
+                          <i class="icon icon-stash_arrow-up"></i>
+                          Попробовать
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-models-slide G-flex-column">
+                        <h2 class="l-block-title">Llama 4 Scout</h2>
+                        <p class="l-block-text">
+                          Ведущая в своём классе мультимодальная модель, которая
+                          обеспечивает превосходный текстовый и визуальный
+                          анализ
+                        </p>
+
+                        <a
+                          href="#"
+                          class="btn-primary l-models-btn G-align-center"
+                        >
+                          <i class="icon icon-stash_arrow-up"></i>
+                          Попробовать
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-models-slide G-flex-column">
+                        <h2 class="l-block-title">Llama 4 Maverick</h2>
+                        <p class="l-block-text">
+                          Ведущая в отрасли мультимодальная модель для
+                          распознавания изображений и текста с революционным
+                          интеллектом и быстрым откликом
+                        </p>
+
+                        <a
+                          href="#"
+                          class="btn-primary l-models-btn G-align-center"
+                        >
+                          <i class="icon icon-stash_arrow-up"></i>
+                          Попробовать
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-models-slide G-flex-column">
+                        <h2 class="l-block-title">Llama 4 Behemoth</h2>
+                        <p class="l-block-text">
+                          Предварительный просмотр (модель все еще обучается!)
+                          модели Llama 4, которая использовалась для создания
+                          Llama 4 Scout и Llama 4 Maverick
+                        </p>
+
+                        <a
+                          href="#"
+                          class="btn-primary l-models-btn G-align-center"
+                        >
+                          <i class="icon icon-stash_arrow-up"></i>
+                          Читать
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-possibilities-section">
+          <div class="container">
+            <div class="l-possibilities-body">
+              <div class="l-possibilities-titles fade-top">
+                <h3 class="e-section-title">
+                  Возможности
+                  <span class="text-blue">Llama 4</span>
+                </h3>
+                <p class="e-section-text">
+                  <span class="mobile-text-wrap"
+                    >Llama 4 Behemoth, Llama 4 Scout</span
+                  >
+                  и Llama 4 Maverick
+                  <span class="desktop-text-wrap"
+                    >предлагают
+                    <span class="mobile-text-wrap"
+                      >передовые функции индустрии</span
+                    ></span
+                  >
+                </p>
+                <a href="#">
+                  <span>Узнайте больше о модели</span>
+                  <div>
+                    <i class="icon icon-lArrowLeft"></i>
+                  </div>
+                </a>
+              </div>
+
+              <div class="l-possibilities-cnt d-block-cnt">
+                <div id="accordion" class="l-categories-items  fade-left">
+                  <div class="l-category-item active animate-item">
+                    <div data-id="1" class="l-category-header open G-align-center link">
+                      <h3>Мультимодальность</h3>
+                      <div></div>
+                    </div>
+                    <div class="l-category-sub-block submenu">
+                      <p>
+                        Все модели Llama 4 изначально мультимодальны и
+                        используют раннее слияние, что позволяет нам
+                        предварительно обучать модель на большом количестве
+                        немаркированных текстовых и визуальных токенов. Это
+                        качественный скачок по сравнению с отдельными
+                        замороженными мультимодальными весами.
+                      </p>
+                      <div class="l-image-item-mobile">
+                        <img
+                          src="assets/images/lImageItem1.webp"
+                          alt="photo"
+                          loading="lazy"
+                          fetchpriority="high"
+                          width="782"
+                          height="461"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="l-category-item animate-item">
+                    <div data-id="2" class="l-category-header link G-align-center">
+                      <h3>Длинная память</h3>
+                      <div></div>
+                    </div>
+
+                    <div class="l-category-sub-block submenu">
+                      <p>
+                        Llama 4 Scout поддерживает до 10 миллионов токенов
+                        контекста — это самая большая длина контекста, доступная
+                        в отрасли. Это открывает новые возможности для
+                        использования памяти, персонализации и мультимодальных
+                        приложений.
+                      </p>
+
+                      <div class="l-image-item-mobile">
+                        <img
+                          src="assets/images/lImageItem2.webp"
+                          alt="photo"
+                          loading="lazy"
+                          fetchpriority="high"
+                          width="782"
+                          height="461"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="l-category-item animate-item">
+                    <div data-id="3" class="l-category-header G-align-center link">
+                      <h3>Экспертность</h3>
+                      <div></div>
+                    </div>
+
+                    <div class="l-category-sub-block submenu">
+                      <p>
+                        Llama 4 также является лучшей в своём классе моделью для
+                        привязки изображений, способной сопоставлять запросы
+                        пользователей с соответствующими визуальными концепциями
+                        и привязывать ответы модели к областям изображения.
+                      </p>
+
+                      <div class="l-image-item-mobile">
+                        <img
+                          src="assets/images/lImageItem3.webp"
+                          alt="photo"
+                          loading="lazy"
+                          fetchpriority="high"
+                          width="782"
+                          height="461"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="l-images-items fade-right">
+                  <div data-id="1" class="l-image-item active G-flex">
+                    <img
+                      src="assets/images/lImageItem1.webp"
+                      alt="photo"
+                      loading="lazy"
+                      fetchpriority="high"
+                      width="782"
+                      height="461"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+
+                  <div data-id="2" class="l-image-item G-flex">
+                    <img
+                      src="assets/images/lImageItem2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      fetchpriority="high"
+                      width="782"
+                      height="461"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+
+                  <div data-id="3" class="l-image-item G-flex">
+                    <img
+                      src="assets/images/lImageItem3.webp"
+                      alt="photo"
+                      loading="lazy"
+                      fetchpriority="high"
+                      width="782"
+                      height="461"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-partners-section">
+          <div class="l-partner-container">
+            <div class="l-partners-body">
+              <h4 class="l-partner-title fade-top">Экосистема партнёров</h4>
+
+              <div class="l-partners-media fade-bottom">
+                <picture>
+                  <source
+                    srcset="assets/images/lPartnersMediaMobiile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/lPartnersMedia.webp"
+                    alt="photo"
+                    loading="lazy"
+                    width="1440"
+                    height="400"
+                    style="width: 100%; height: auto"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-resources-section e-section">
+          <div class="container">
+            <div class="l-resources-body">
+              <div class="l-resources-titles fade-top">
+                <h5 class="e-section-title">Полезные ресурсы</h5>
+                <p class="e-section-text">
+                  Изучайте новейшие инструменты, документацию
+                  <span class="desktop-text-wrap"
+                    >и лучшие практики при работе с Llama</span
+                  >
+                </p>
+              </div>
+
+              <div class="l-resources-swiper-block fade-bottom d-block-cnt">
+                <div class="l-resources-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="l-resources-slide G-flex-column">
+                        <i class="icon l-resources-icon icon-document"></i>
+                        <h5 class="l-block-title">Документы</h5>
+                        <p class="l-block-text">
+                          Руководства и ресурсы, необходимые для разработки с
+                          помощью Llama 4
+                        </p>
+
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-resources-slide G-flex-column">
+                        <i class="icon l-resources-icon icon-document2"></i>
+                        <h5 class="l-block-title">Промпты</h5>
+                        <p class="l-block-text">
+                          Ознакомьтесь с нашей подборкой рецептов от Llama,
+                          чтобы быстрее приступить к работе
+                        </p>
+
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-resources-slide G-flex-column">
+                        <i class="icon l-resources-icon icon-document3"></i>
+                        <h5 class="l-block-title">Примеры и кейсы</h5>
+                        <p class="l-block-text">
+                          Посмотрите, как другие новаторы создают продукты с
+                          помощью Llama.
+                        </p>
+
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="l-resources-info-block fade-bottom G-align-center">
+                <div class="l-resources-info-titles G-flex-column">
+                  <h5>
+                    Будьте в курсе
+                    <span class="text-wrap">последних обновлений</span>
+                  </h5>
+                  <p>
+                    Перед вами самое удобное поколение Llama: нейросеть,
+                    <span class="desktop-text-wrap"
+                      >основанная на сочетании опыта экспертов,</span
+                    >
+                    расширенные возможности и лучшие в отрасли понимание
+                    контента
+                  </p>
+                </div>
+
+                <a href="#" class="btn-primary G-align-center">
+                  <i class="icon icon-stash_arrow-up"></i>
+                  <span class="desktop-block">Подписаться</span>
+                  <span class="mobile-block">Регистрация бесплатно</span>
+                </a>
+
+                <div class="l-resources-bg G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/lResourcesBgMobiile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/lResourcesBg.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width="549"
+                      height="367"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="l-news-section e-section">
+          <div class="container">
+            <div class="l-news-body">
+              <div class="l-news-titles fade-top">
+                <h6 class="e-section-title">Последние новости</h6>
+                <p class="e-section-text">
+                  <span class="mobile-text-wrap"
+                    >Изучайте новейшие инструменты,</span
+                  >
+                  документацию
+                  <span class="desktop-text-wrap"
+                    >и лучшие практики
+                    <span class="mobile-text-wrap"
+                      >при работе с Llama</span
+                    ></span
+                  >
+                </p>
+              </div>
+
+              <div class="l-news-swiper-block fade-bottom d-block-cnt">
+                <div class="l-news-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="l-news-slide G-flex-column">
+                        <div class="l-news-slide-img G-flex">
+                          <img
+                            src="assets/images/lNewsSlideImg1.webp"
+                            alt="photo"
+                            loading="lazy"
+                            width="380"
+                            height="214"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="l-news-slide-texts G-flex-column">
+                          <h6 class="l-block-title">
+                            Объединяем усилия с AWS в рамках новой программы,
+                            которая поможет стартапам создавать продукты с
+                            помощью Llama
+                          </h6>
+                          <p class="l-block-text">
+                            Мы объединяем усилия с Amazon Web Services, чтобы
+                            объявить о новой программе, которая предоставит
+                            ресурсы и поддержку 30 перспективным стартапам в
+                            США, работающим с Llama.
+                          </p>
+                        </div>
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-news-slide G-flex-column">
+                        <div class="l-news-slide-img G-flex">
+                          <img
+                            src="assets/images/lNewsSlideImg2.webp"
+                            alt="photo"
+                            loading="lazy"
+                            width="380"
+                            height="214"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="l-news-slide-texts G-flex-column">
+                          <h6 class="l-block-title">
+                            Как Llama помогает повысить эффективность работы
+                            крупного австралийского банка
+                          </h6>
+                          <p class="l-block-text">
+                            ANZ, один из четырёх крупнейших банков Австралии,
+                            повышает эффективность инженерных решений с помощью
+                            Llama.
+                          </p>
+                        </div>
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="l-news-slide G-flex-column">
+                        <div class="l-news-slide-img G-flex">
+                          <img
+                            src="assets/images/lNewsSlideImg3.webp"
+                            alt="photo"
+                            loading="lazy"
+                            width="380"
+                            height="214"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="l-news-slide-texts G-flex-column">
+                          <h6 class="l-block-title">
+                            Объявляем о наборе в первую программу Llama Startup
+                          </h6>
+                          <p class="l-block-text">
+                            В Meta мы верим в потенциал стартапов на ранних
+                            стадиях развития, которые могут стимулировать
+                            инновации на рынке генеративного искусственного
+                            интеллекта. С помощью программы Llama Startup
+                            Program мы стремимся снизить порог входа для начала
+                            работы с моделями Llama.
+                          </p>
+                        </div>
+                        <a class="l-slide-link" href="#">
+                          <i class="icon icon-stash_arrow-up"></i>
+                          <span>Читать</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="l-footer">
+        <div class="container">
+          <div class="l-footer-body G-center">
+            <a href="#" class="l-footer-logo G-flex">
+              <img
+                src="assets/images/lFooterLogo.svg"
+                alt="logo"
+                loading="lazy"
+                width="285"
+                height="48"
+                style="width: 100%; height: 100%"
+              />
+            </a>
+            <a href="#" class="btn-primary G-align-center">
+              <i class="icon icon-stash_arrow-up"></i>
+              Начать работу
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

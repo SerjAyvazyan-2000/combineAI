@@ -237,3 +237,82 @@ const heroSwiper = new Swiper(".d-hero-swiper", {
     1200: { slidesPerView: 8 },
   },
 });
+
+const LWorkSwiper = new Swiper(".l-models-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  autoHeight: true,
+  loop: true,
+  slideToClickedSlide: true,
+
+  breakpoints: {
+    320: { slidesPerView: 1.2 },
+    500: { slidesPerView: 1.5 },
+    626: { slidesPerView: 2 },
+    830: { slidesPerView: 2.3 },
+    1000: { slidesPerView: 2.5 },
+    1200: { slidesPerView: 4 },
+  },
+});
+
+const bResourcesSwiper = new Swiper(".l-resources-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  autoHeight: true,
+  loop: true,
+  slideToClickedSlide: true,
+
+  breakpoints: {
+    320: { slidesPerView: 1.2 },
+    500: { slidesPerView: 1.5 },
+    626: { slidesPerView: 2 },
+    830: { slidesPerView: 2.3 },
+    1000: { slidesPerView: 2.5 },
+    1200: { slidesPerView: 3 },
+  },
+});
+
+
+const bNewsSwiper = new Swiper(".l-news-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slideToClickedSlide: true,
+  loop: true,
+
+  breakpoints: {
+    320: { slidesPerView: 1.2 , spaceBetween: 20,},
+    500: { slidesPerView: 1.5 },
+    626: { slidesPerView: 2 },
+    830: { slidesPerView: 2.3 },
+    1000: { slidesPerView: 2.5 },
+    1200: { slidesPerView: 3 },
+  },
+});
+
+
+
+
+const swiperObserver = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    new Swiper(entry.target, {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      autoHeight:true,
+      centeredSlides: true,
+      speed: 600,
+      pagination: {
+        el: entry.target.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+    });
+
+    obs.unobserve(entry.target);
+  });
+});
+
+document.querySelectorAll('.you-need-slider').forEach(slider => {
+  swiperObserver.observe(slider);
+});
+

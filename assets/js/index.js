@@ -32,45 +32,42 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".animate-item");
-    if (!items.length) return; 
+  const items = document.querySelectorAll(".animate-item");
+  if (!items.length) return;
 
-    const observer = new IntersectionObserver((entries) =>
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
+  const observer = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-            const index = [...items].indexOf(entry.target);
-            entry.target.style.transitionDelay = `${ 0.15}s`;
-            entry.target.classList.add("visible");
+        const index = [...items].indexOf(entry.target);
+        entry.target.style.transitionDelay = `${0.15}s`;
+        entry.target.classList.add("visible");
 
-            observer.unobserve(entry.target);
-        })
-    , { threshold: 0.1 });
+        observer.unobserve(entry.target);
+      }),
+    { threshold: 0.1 }
+  );
 
-    items.forEach(item => observer.observe(item));
+  items.forEach((item) => observer.observe(item));
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector("#heroVideo");
-  if(video){
-  const source = video.querySelector("source");
+  if (video) {
+    const source = video.querySelector("source");
 
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      source.src = source.dataset.src;
-      video.load();
-      observer.disconnect();
-    }
-  });
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        source.src = source.dataset.src;
+        video.load();
+        observer.disconnect();
+      }
+    });
 
-  observer.observe(video);
+    observer.observe(video);
   }
-
 });
-
 
 const track = document.querySelector(".b-partners-track");
 if (track) {
@@ -180,7 +177,6 @@ $(window).on("load", function () {
   });
 });
 
-
 let macy;
 
 function initMacy() {
@@ -208,8 +204,6 @@ window.addEventListener("resize", () => {
   if (typeof window.Macy !== "function") return;
   initMacy();
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const idSwitches = document.querySelectorAll(
@@ -340,10 +334,6 @@ document.addEventListener("DOMContentLoaded", function () {
   applyFilter();
 });
 
-
-
-
-
 const hTracks = document.querySelectorAll(".h-universe-track");
 
 hTracks.forEach((hTrack) => {
@@ -361,7 +351,6 @@ hTracks.forEach((hTrack) => {
     duration: 70,
     ease: "none",
     repeat: -1,
- 
   });
 });
 
@@ -374,17 +363,15 @@ hRightTracks.forEach((track) => {
 
   gsap.fromTo(
     track,
-    { x: -width }, 
+    { x: -width },
     {
       x: 0,
       duration: 70,
       ease: "none",
       repeat: -1,
-
     }
   );
 });
-
 
 const hWorkTracks = document.querySelectorAll(".h-work-partners-track");
 
@@ -405,13 +392,6 @@ hWorkTracks.forEach((track) => {
     },
   });
 });
-
-
-
-
-
-
-
 
 document.querySelector(".h-hero-input-box") &&
   document.addEventListener("DOMContentLoaded", () => {
@@ -468,13 +448,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
-
-
-
 const jFileInput = document.querySelector("#j-file-input");
 const jFileLabel = document.querySelector(".j-hero-file-label");
 const jFileResult = document.querySelector(".j-hero-file-rezult");
@@ -509,8 +482,6 @@ if (!jFileInput || !jFileLabel || !jFileResult || !jPreviewImg || !jCloseBtn) {
   });
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const jTextarea = document.querySelector(".j-hero-textarea-label textarea");
   const jStartCount = document.querySelector(".j-start-count");
@@ -522,7 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!jTextarea || !jStartCount || !jMaxCount || !jCounter) return;
 
-  jTextarea.placeholder = jDefaultPlaceholder; 
+  jTextarea.placeholder = jDefaultPlaceholder;
   jStartCount.textContent = "0";
   jMaxCount.textContent = String(J_MAX);
 
@@ -550,7 +521,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   jUpdate();
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const jSelects = document.querySelectorAll(".j-hero-select");
@@ -585,7 +555,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const jStyleSelect = document.querySelector(".j-hero-select-style");
   if (!jStyleSelect) return;
@@ -614,30 +583,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelector(".j-examples-media") &&
-document.addEventListener("DOMContentLoaded", () => {
-  const media = document.querySelector(".j-examples-media");
-  const btn = media.querySelector(".j-examples-btn");
-  const text = btn.querySelector("span");
+  document.addEventListener("DOMContentLoaded", () => {
+    const media = document.querySelector(".j-examples-media");
+    const btn = media.querySelector(".j-examples-btn");
+    const text = btn.querySelector("span");
 
-  btn.addEventListener("click", () => {
-    const isActive = media.classList.contains("active");
+    btn.addEventListener("click", () => {
+      const isActive = media.classList.contains("active");
 
-    if (isActive) {
-      media.classList.remove("active");
-      text.textContent = "Показать больше";
+      if (isActive) {
+        media.classList.remove("active");
+        text.textContent = "Показать больше";
 
-      media.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-
-    } else {
-      media.classList.add("active");
-      text.textContent = "Показать меньше";
-    }
+        media.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      } else {
+        media.classList.add("active");
+        text.textContent = "Показать меньше";
+      }
+    });
   });
-});
-
 
 $(function () {
   let Accordion = function (el, multiple) {
@@ -675,91 +642,140 @@ $(function () {
   firstSub.show();
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    const heroBlock = document.querySelector(".e-hero-textarea");
-    if (!heroBlock) return; 
+  const heroBlock = document.querySelector(".e-hero-textarea");
+  if (!heroBlock) return;
 
-    const textarea = heroBlock.querySelector("textarea");
-    const placeholder = heroBlock.querySelector(".e-textarea-placeholder");
-    const buttons = document.querySelectorAll(".e-hero-hints button");
+  const textarea = heroBlock.querySelector("textarea");
+  const placeholder = heroBlock.querySelector(".e-textarea-placeholder");
+  const buttons = document.querySelectorAll(".e-hero-hints button");
 
-    if (!textarea || !placeholder) return;
+  if (!textarea || !placeholder) return;
 
-    const toggle = () =>
-        textarea.value.trim() === ""
-            ? placeholder.classList.remove("hidden")
-            : placeholder.classList.add("hidden");
+  const toggle = () =>
+    textarea.value.trim() === ""
+      ? placeholder.classList.remove("hidden")
+      : placeholder.classList.add("hidden");
 
-    buttons.forEach(btn =>
-        btn.addEventListener("click", () => {
-            textarea.value = btn.textContent.trim();
-            placeholder.classList.add("hidden");
-            textarea.focus();
-        })
-    );
+  buttons.forEach((btn) =>
+    btn.addEventListener("click", () => {
+      textarea.value = btn.textContent.trim();
+      placeholder.classList.add("hidden");
+      textarea.focus();
+    })
+  );
 
-    textarea.addEventListener("input", toggle);
-    textarea.addEventListener("blur", toggle);
-    textarea.addEventListener("focus", () => placeholder.classList.add("hidden"));
+  textarea.addEventListener("input", toggle);
+  textarea.addEventListener("blur", toggle);
+  textarea.addEventListener("focus", () => placeholder.classList.add("hidden"));
 
-    toggle();
+  toggle();
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const boxes = document.querySelectorAll(".f-search-box");
-  if (!boxes.length) return; 
+  if (!boxes.length) return;
 
-  boxes.forEach(box => {
+  boxes.forEach((box) => {
     const input = box.querySelector("input");
     if (!input) return;
 
     input.addEventListener("focus", () => box.classList.add("active"));
-    input.addEventListener("blur",  () => box.classList.remove("active"));
+    input.addEventListener("blur", () => box.classList.remove("active"));
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
-    const sidebar = document.querySelector(".f-sidebar-nav");
-    if (!sidebar) return; 
+  const sidebar = document.querySelector(".f-sidebar-nav");
+  if (!sidebar) return;
 
-    const links = sidebar.querySelectorAll("ul li a");
-    if (!links.length) return;
+  const links = sidebar.querySelectorAll("ul li a");
+  if (!links.length) return;
 
-    links.forEach(link =>
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            links.forEach(l => l.classList.remove("active"));
-            link.classList.add("active");
-        })
-    );
+  links.forEach((link) =>
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      links.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    })
+  );
 });
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".f-wrapper");
-    const arrowBtn = document.querySelector(".icon-arrowUpLine");
-    const burger = document.querySelector(".f-burger");
+  const wrapper = document.querySelector(".f-wrapper");
+  const arrowBtn = document.querySelector(".icon-arrowUpLine");
+  const burger = document.querySelector(".f-burger");
 
-    if (!wrapper) return;
+  if (!wrapper) return;
 
-    arrowBtn?.addEventListener("click", () => {
-        wrapper.classList.remove("active");
-        wrapper.classList.add("inActive");
-    });
+  arrowBtn?.addEventListener("click", () => {
+    wrapper.classList.remove("active");
+    wrapper.classList.add("inActive");
+  });
 
-    burger?.addEventListener("click", () => {
-        wrapper.classList.remove("inActive");
-        wrapper.classList.add("active");
-    });
+  burger?.addEventListener("click", () => {
+    wrapper.classList.remove("inActive");
+    wrapper.classList.add("active");
+  });
 });
 
+document.querySelector(".l-category-item") &&
+  (() => {
+    const lItems = document.querySelectorAll(".l-category-item");
+    const lImages = document.querySelectorAll(".l-image-item");
 
+    const showFirstImage = () => {
+      lImages.forEach((img) => img.classList.remove("active"));
+      lImages[0]?.classList.add("active");
+    };
+
+    !document.querySelector(".l-category-item.active") && showFirstImage();
+
+    lItems.forEach((lItem) => {
+      const lHeader = lItem.querySelector(".l-category-header");
+
+      lHeader.onclick = () => {
+        const lId = lHeader.dataset.id;
+        const lIsActive = lItem.classList.contains("active");
+
+        lItems.forEach((i) => i.classList.remove("active"));
+        lImages.forEach((img) => img.classList.remove("active"));
+
+        if (!lIsActive) {
+          lItem.classList.add("active");
+          document
+            .querySelector(`.l-image-item[data-id="${lId}"]`)
+            ?.classList.add("active");
+        } else {
+          showFirstImage();
+        }
+      };
+    });
+  })();
+
+const Itracks = document.querySelectorAll(".i-work-partners-track");
+if (Itracks) {
+  Itracks.forEach((track) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const items = [...track.children];
+    items.forEach((item) => track.appendChild(item.cloneNode(true)));
+
+    const totalWidth = track.scrollWidth / 2;
+
+    const anim = gsap.to(track, {
+      x: -totalWidth,
+      duration: 120,
+      ease: "linear",
+      repeat: -1,
+      paused: true,
+      force3D: true,
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => (e.isIntersecting ? anim.play() : anim.pause()));
+    });
+
+    observer.observe(track);
+  });
+}

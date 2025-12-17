@@ -202,3 +202,25 @@
           mask-image: url(arrowDown.svg);
   -webkit-mask-image: url(arrowDown.svg);
 }
+
+
+.icon-lArrowLeft{
+      mask-image: url(lArrowLeft.svg);
+  -webkit-mask-image: url(lArrowLeft.svg);
+}
+.icon-lPlus{
+        mask-image: url(lPlus.svg);
+  -webkit-mask-image: url(lPlus.svg);
+}
+.icon-document{
+        mask-image: url(lDocument.svg);
+  -webkit-mask-image: url(lDocument.svg);
+}
+.icon-document2{
+        mask-image: url(lDocument2.svg);
+  -webkit-mask-image: url(lDocument2.svg);
+}
+.icon-document3{
+          mask-image: url(lDocument3.svg);
+  -webkit-mask-image: url(lDocument3.svg);
+}

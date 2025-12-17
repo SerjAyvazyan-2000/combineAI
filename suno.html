@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Suno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/i-banner-image.webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body{
+            background: #18181C;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="i-main-container">
+      <div class="i-top-bg"></div>
+      <header class="i-header fade-top">
+        <div class="i-container">
+          <div class="i-header-info">
+            <a href="index.html" class="i-logo" aria-label="suno-logo">
+              <img
+                src="assets/images/i-logo.svg"
+                alt="suno-logo"
+                width="95"
+                height="21"
+                decoding="async"
+              />
+            </a>
+            <a href="#" class="i-white-btn">
+              <span class="icon"></span>
+              Регистрация <span>бесплатно</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="i-banner">
+        <img
+          loading="lazy"
+          src="assets/images/i-banner-img1.webp"
+          alt="banner-img"
+          class="i-left-img fade-left"
+        />
+        <div class="i-container">
+          <div class="i-info-block fade-bottom">
+            <h1>Напишите песню всего за 1 запрос</h1>
+            <p>
+              <span>Начните с простого запроса или</span>
+              <span>воспользуйтесь профессиональными</span>
+              <span>инструментами для редактирования.</span>
+              <span>Ваш следующий трек уже совсем близко!</span>
+            </p>
+            <div class="i-info">
+              <textarea
+                class="hero-input"
+                autocomplete="off"
+                name="text"
+               placeholder="Напиши джазовую песню о том, как я заработал свой первый миллион"
+              ></textarea>
+              <div class="buttons">
+                <label class="i-file-wrap">
+                  <input type="file" />
+                  <img
+                    src="assets/images/icon/i-plus.svg"
+                    alt="icon-plus"
+                    width="18px"
+                    height="18px"
+                  />
+                </label>
+                <a href="#" class="settings-btn style">
+                  <img
+                    src="assets/images/icon/i-settings.svg"
+                    alt="icon-settings"
+                    width="18px"
+                    height="18px"
+                  />
+                  Настройки
+                </a>
+                <a href="#" class="drop-btn style">
+                  <img
+                    src="assets/images/icon/i-drop.svg"
+                    alt="icon-drop"
+                    width="20px"
+                    height="20px"
+                  />
+                </a>
+                <a href="#" class="i-white-btn">
+                  <span class="icon"></span>
+                  Cгенерировать
+                </a>
+              </div>
+            </div>
+            <img
+              src="assets/images/i-banner-image.webp"
+              class="i-mobile-img"
+              decoding="async"
+              fetchpriority="high"
+              alt="banner-image"
+            />
+          </div>
+        </div>
+        <img
+          loading="lazy"
+          src="assets/images/i-banner-img2.webp"
+          alt="banner-img"
+          class="i-right-img fade-right"
+        />
+      </section>
+
+      <section class="i-brand-logos">
+        <div class="i-container">
+          <div class="logos fade-bottom">
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-1.webp"
+              alt="brand-logo"
+              width="101"
+              height="20"
+              decoding="async"
+            />
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-2.webp"
+              alt="brand-logo"
+              width="78"
+              height="20"
+              decoding="async"
+            />
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-3.webp"
+              alt="brand-logo"
+              width="75"
+              height="20"
+              decoding="async"
+            />
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-4.webp"
+              alt="brand-logo"
+              width="113"
+              height="20"
+              decoding="async"
+            />
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-5.webp"
+              alt="brand-logo"
+              width="67"
+              height="20"
+              decoding="async"
+            />
+            <img
+              loading="lazy"
+              src="assets/images/i-brand-logo-6.webp"
+              alt="brand-logo"
+              width="96"
+              height="20"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="i-information">
+        <div class="i-container fade-top">
+          <h2>Безупречное качество треков</h2>
+          <p>Suno делает создание качественной музыки доступным для всех</p>
+        </div>
+        <div class="i-work-partners-track">
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img1.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Ami</b>
+            <span>fracaismfe</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img2.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Up and down</b>
+            <span>@merdeis1</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img3.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Night</b>
+            <span>@CaneDust</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img4.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Deli's party</b>
+            <span>@Marksenk</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img5.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Insanity of Sanity</b>
+            <span>@e3841</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img6.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>FutCar</b>
+            <span>@aliceofspades</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img7.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>DDDT</b>
+            <span>@marchs3</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img8.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="374"
+              />
+            </div>
+            <b>Clair de la lune</b>
+            <span>@ertendo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="i-you-need">
+        <div class="i-container">
+          <h3 class="fade-top">
+            <span>Всё, что вам нужно,</span>
+            <span>чтобы создавать музыку по-своему</span>
+          </h3>
+          <div class="i-you-need-items fade-bottom">
+            <div class="i-you-need-item">
+              <b><span>10 бесплатных</span> песен в день</b>
+              <span
+                >Выражайте то, что не могут выразить слова. Ежедневно. Начните
+                прямо сейчас!</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img1.webp"
+                alt="you-need-img"
+                width="189"
+                height="189"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b><span>С искусственным</span> интеллектом</b>
+              <span
+                >Воспользуйтесь лучшим на рынке генератором песен на основе
+                искусственного интеллекта</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img2.webp"
+                alt="you-need-img"
+                width="293"
+                height="180"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b>Настоящее комьюнити</b>
+              <span
+                >Создавайте музыку, которая важна для вас, а затем делитесь ею с
+                поклонниками музыки</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img3.webp"
+                alt="you-need-img"
+                width="293"
+                height="174"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b><span>Детализированные</span> элементы управления</b>
+              <span
+                >Управляйте стилем с помощью промптов или углубитесь в детали и
+                экспериментируйте с ползунками</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img4.webp"
+                alt="you-need-img"
+                width="293"
+                height="180"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b><span>Коммерческие права</span> на ваши песни</b>
+              <span
+                >Песни, которые вы создаёте, будучи подписчиком Suno,
+                принадлежат вам, и вы можете делать с ними всё, что
+                захотите</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img5.webp"
+                alt="you-need-img"
+                width="202"
+                height="173"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b>Огромное творческое пространство</b>
+              <span
+                >Suno Studio — это первая в своём роде веб-платформа для
+                создания генеративного аудио</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img6.webp"
+                alt="you-need-img"
+                width="293"
+                height="180"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b><span>Современные</span> алгоритмы</b>
+              <span
+                >Начинайте, редактируйте, создавайте ремиксы — как вам удобно.
+              </span>
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img7.webp"
+                alt="you-need-img"
+                width="293"
+                height="202"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b>Создавайте каждый день. Сохраняйте всё.</b>
+              <span
+                >Создавайте до 500 авторских песен в месяц с полными
+                коммерческими правами в рамках плана Pro</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img8.webp"
+                alt="you-need-img"
+                width="293"
+                height="141"
+                decoding="async"
+              />
+            </div>
+            <div class="i-you-need-item">
+              <b><span>Добавляйте файлы</span> в свою DAW</b>
+              <span
+                >Экспортируйте до 12 WAV-файлов с синхронизацией по времени и
+                без проблем используйте их в Ableton, Logic или любой другой
+                DAW</span
+              >
+              <img
+                loading="lazy"
+                src="assets/images/i-you-need-img9.webp"
+                alt="you-need-img"
+                width="293"
+                height="155"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="swiper you-need-slider fade-bottom you-need-slider1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>10 бесплатных</span> песен в день</b>
+                  <span
+                    >Выражайте то, что не могут выразить слова. Ежедневно.
+                    Начните прямо сейчас!</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img1.webp"
+                    class="small"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>С искусственным</span> интеллектом</b>
+                  <span
+                    >Воспользуйтесь лучшим на рынке генератором песен на основе
+                    искусственного интеллекта</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img2.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b>Настоящее комьюнити</b>
+                  <span
+                    >Создавайте музыку, которая важна для вас, а затем делитесь
+                    ею с поклонниками музыки</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img3.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper you-need-slider fade-bottom you-need-slider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>Детализированные</span> элементы управления</b>
+                  <span
+                    >Управляйте стилем с помощью промптов или углубитесь в
+                    детали и экспериментируйте с ползунками</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img4.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>Коммерческие права</span> на ваши песни</b>
+                  <span
+                    >Песни, которые вы создаёте, будучи подписчиком Suno,
+                    принадлежат вам, и вы можете делать с ними всё, что
+                    захотите</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img5.webp"
+                    class="small"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b>Огромное творческое пространство</b>
+                  <span
+                    >Suno Studio — это первая в своём роде веб-платформа для
+                    создания генеративного аудио</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img6.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper you-need-slider fade-bottom you-need-slider3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>Современные</span> алгоритмы</b>
+                  <span
+                    >Начинайте, редактируйте, создавайте ремиксы — как вам
+                    удобно.
+                  </span>
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img7.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b>Создавайте каждый день. Сохраняйте всё.</b>
+                  <span
+                    >Создавайте до 500 авторских песен в месяц с полными
+                    коммерческими правами в рамках плана Pro</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img8.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="i-you-need-item">
+                  <b><span>Добавляйте файлы</span> в свою DAW</b>
+                  <span
+                    >Экспортируйте до 12 WAV-файлов с синхронизацией по времени
+                    и без проблем используйте их в Ableton, Logic или любой
+                    другой DAW</span
+                  >
+                  <img
+                    loading="lazy"
+                    src="assets/images/i-you-need-img9.webp"
+                    alt="you-need-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="i-music-block">
+        <div class="i-music-info ">
+          <h4 class="fade-bottom">Музыкальное приложение №1</h4>
+          <p class="fade-top">
+            <span>Находите, создавайте и делитесь</span>
+            <span>музыкой из любой точки мира,</span>
+            <span>ведь у музыки нет границ</span>
+          </p>
+          <a href="#" class="i-white-btn">
+            <span class="icon"></span>
+            Начать работу
+          </a>
+        </div>
+      </section>
+
+      <section class="i-information style2">
+        <div class="i-container fade-top">
+          <h5>Исследуйте и черпайте вдохновение</h5>
+          <p>
+            Присоединяйтесь к музыкальному генератору № 1 с поддержкой
+            искусственного интеллекта
+          </p>
+        </div>
+        <div class="i-work-partners-track">
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img9.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@MereditYaga</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img10.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@musiclux</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img11.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@Lesliii1</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img12.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@ComBonSon</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img13.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@Darkness239</span>
+          </div>
+          <div class="i-work-partners-item">
+            <div class="img-wrap">
+              <img
+                loading="lazy"
+                src="assets/images/i-information-img14.webp"
+                alt="suno-information-img"
+                decoding="async"
+                width="276"
+                height="487"
+              />
+            </div>
+            <span>@artstation1</span>
+          </div>
+        </div>
+        <div class="i-container i-btn-container">
+          <a href="#" class="i-white-btn">
+            <span class="icon"></span>
+            Попробовать самому
+          </a>
+        </div>
+      </section>
+
+      <section class="i-footer">
+        <div class="i-container">
+          <a href="index.html" class="i-footer-logo">
+            <img src="assets/images/i-logo.svg" alt="suno-logo" />
+          </a>
+          <p class="i-copyright">&copy; 2025 Suno, Inc.</p>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+
+        <script src="assets/js/swiper.js" defer></script>
+
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>
