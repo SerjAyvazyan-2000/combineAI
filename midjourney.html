@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Midjourney</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body{
+        background: #121316;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="fade-top">
+        <div class="container">
+          <div class="g-header-body G-align-center">
+            <a class="header-logo G-flex" href="index.html" class="logo">
+              <img
+                src="assets/images/GLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="112"
+                height="24"
+                style="width: 100%; height: auto"
+              />
+            </a>
+
+            <div class="header-actons G-align-center">
+              <a class="btn-register" href="#">
+                Регистрация <span class="desktop-block">бесплатно</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="g-hero-section">
+          <div class="g-hero-body">
+            <a
+              class="g-hero-logo fade-top G-flex"
+              href="index.html"
+              class="logo"
+            >
+              <img
+                src="assets/images/gHeroLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="211"
+                height="40"
+                style="width: 100%; height: auto"
+              />
+            </a>
+
+            <div class="g-hero-actions  G-align-center">
+              <a href="#">
+                <i class="icon icon-reg"></i>
+                <span>Регистрация</span>
+              </a>
+
+              <a href="#">
+                <i class="icon icon-login"></i>
+                <span>Вход</span>
+              </a>
+
+              <a href="#">
+                <i class="icon icon-generate"></i>
+                <span>Начать генерацию</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="g-hero-video fade-top">
+            <video
+              muted
+              playsinline
+              autoplay
+              loop
+              preload="none"
+              poster="assets/images/gVideoPreview.webp"
+              id="gHeroVideo"
+            >
+              <source
+                src="assets/images/GheroVideo.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div class="g-hero-video-bg"></div>
+        </section>
+
+        <section class="g-about-section g-section">
+          <div class="g-small-container">
+            <div class="g-about-body G-flex-column">
+              <div class="g-about-text-item animate-item">
+                <div class="g-about-text-titles G-align-center">
+                  <i class="icon icon-about"></i>
+                  <h2>О нейросети</h2>
+                </div>
+
+                <div class="g-about-texts G-flex-column">
+                  <p>
+                    Midjourney — это мост между человеческой фантазией
+                    и цифровыми возможностями. Здесь нет места сложным
+                    настройкам и техническим барьерам — есть только прямой
+                    диалог между вашей идеей и инструментами для её реализации.
+                  </p>
+                  <p>
+                    <strong
+                      >Ваша фантазия — наш главный алгоритм. Всё остальное —
+                      дело техники.</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="g-about-text-item animate-item">
+                <div class="g-about-text-titles G-align-center">
+                  <i class="icon icon-settings"></i>
+                  <h2>Инструменты сервиса</h2>
+                </div>
+
+                <div class="g-about-texts G-flex-column">
+                  <p>
+                    Генерация, ретушь, коллажи, замена фона, улучшение
+                    качества — все инструменты профессионального дизайнера
+                    теперь доступны в одном интеллектуальном решении.
+                  </p>
+                  <p>
+                    Создавайте, преобразовывайте и совершенствуйте визуальный
+                    контент без ограничений и сложных переходов между сервисами.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="g-galery-section g-section">
+          <div class="g-big-container">
+            <div class="g-galery-items">
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem1.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Улучшение качества</p>
+              </div>
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem2.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>AI-генерация</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem3.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Расширение фото</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem4.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Замена лиц</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem5.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Генерация логотипа</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem6.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Детализация</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem7.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>Удаление фона</p>
+              </div>
+
+              <div class="g-galery-item animate-item G-flex">
+                <img
+                  src="assets/images/gGaleryItem8.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="285"
+                  height="285"
+                />
+                <p>AI-ретушь</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="g-about-section g-section">
+          <div class="g-small-container">
+            <div class="g-about-body G-flex-column">
+              <div class="g-about-text-item animate-item">
+                <div
+                  class="g-about-text-titles g-about-blue-icon G-align-center"
+                >
+                  <i class="icon icon-gBook"></i>
+                  <h2>Принципы работы</h2>
+                </div>
+
+                <div class="g-about-texts G-flex-column">
+                  <p>
+                    Midjourney работает как интеллектуальный конвейер.
+                    Вы формулируете запрос — система анализирует его, подбирает
+                    нужные алгоритмы и последовательно выполняет задачи: создаёт
+                    контент, редактирует или улучшает его.
+                  </p>
+                  <p>
+                    <strong
+                      >Вы получаете всё в одном сервисе — от запроса
+                      до идеального результата.</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="g-about-text-item animate-item">
+                <div
+                  class="g-about-text-titles g-about-green-icon G-align-center"
+                >
+                  <i class="icon icon-gUser"></i>
+                  <h2>Сообщество Midjourney</h2>
+                </div>
+
+                <div class="g-about-texts G-flex-column">
+                  <p>
+                    2 млн+ пользователей по всему миру уже выбрали Midjourney
+                    для своих творческих и рабочих задач. Это сообщество
+                    дизайнеров, маркетологов, блогеров и просто тех, кто ценит
+                    возможность легко воплощать идеи в визуальный контент.
+                  </p>
+                  <p>
+                    <strong
+                      >Присоединяйтесь — ваш контент заслуживает лучших
+                      инструментов.</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="g-footer fade-bottom">
+        <div class="g-big-container">
+          <div class="g-footer-body G-align-start">
+            <div class="g-footer-texts G-flex-column">
+              <a class="g-footer-logo G-flex" href="index.html" class="logo">
+                <img
+                  src="assets/images/gFooterLogo.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="logo"
+                  width="300"
+                  height="50"
+                  style="width: 100%; height: auto"
+                />
+              </a>
+
+              <a class="btn-register mobile-block" href="#">
+                Попробовать бесплатно
+              </a>
+              <p>© 2025 Midjourney AI, Inc.</p>
+            </div>
+
+            <a class="btn-register desktop-block" href="#">
+              Попробовать бесплатно
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

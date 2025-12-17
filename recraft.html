@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Recraft AI — сервис для создания уникального визуала с помощью искусственного интеллекта. Генерация изображений, векторов и дизайна по текстовому описанию за секунды." />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RECRAFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="h-wrapper">
+      <header class="h-header fade-top">
+        <div class="container">
+          <div class="h-header-body G-align-center">
+            <a class="header-logo G-flex" href="index.html" class="logo">
+              <img
+                src="assets/images/hLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="119"
+                height="24"
+                style="width: 100%; height: auto"
+              />
+            </a>
+
+            <div class="header-actons G-align-center">
+              <a class="btn-login" href="#"> Вход </a>
+              <a class="btn-register" href="#"> Регистрация </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="h-hero-section">
+          <div class="container">
+            <div class="h-hero-body fade-top G-column-center">
+              <h1 >
+                Создание уникального <span class="text-wrap">визуала с AI</span>
+              </h1>
+              <p>
+                Создавайте и редактируйте
+                <span class="mobile-text-wrap"
+                  >изображения, векторы и макеты</span
+                >
+                <span class="desktop-text-wrap">
+                  с помощью передовых технологий ИИ</span
+                >
+              </p>
+
+              <div class="h-hero-input-box G-align-center">
+                <label>
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="text"
+                    placeholder="Опишите, что вы хотите создать"
+                  />
+                </label>
+                <a href="#"> Сгенерировать </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-hero-images fade-bottom G-flex">
+            <picture>
+              <source
+                srcset="assets/images/hHeroImagesMobiile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/hHeroImages2.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                width="1920"
+                height="692"
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section class="h-tolls-sectiion">
+          <div class="h-container-big">
+            <div class="container">
+              <div class="h-tolls-body">
+                <h2 class="h-section-title fade-top">
+                  Все AI-<span class="mobile-text-wrap"
+                    >инструменты в одном</span
+                  >
+                  сервисе
+                </h2>
+
+                <div class="h-tolls-swiper fade-bottom h-block-cnt swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Повысить качество</h2>
+                          <p class="h-block-text">
+                            Получайте изображения с идеальной детализацией
+                            и высоким качеством
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg1.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg2.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Перевести в вектор</h2>
+                          <p class="h-block-text">
+                            Преобразуйте растровые фото в векторные файлы,
+                            которые можно редактировать
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg3.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg4.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Перенести макет</h2>
+                          <p class="h-block-text">
+                            Продемонстрируйте клиентам, как продукт будет
+                            выглядеть в реальности
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg5.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg6.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Удалить фон</h2>
+                          <p class="h-block-text">
+                            Мгновенно выделяйте объект для удаления фона,
+                            а затем замените его на тот, который нужен именно
+                            вам
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg7.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg8.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Создать мудборд</h2>
+                          <p class="h-block-text">
+                            Генерируйте визуальные образы в едином стиле —
+                            от фотографий товаров до иллюстраций
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg9.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg10.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Расширить фото</h2>
+                          <p class="h-block-text">
+                            Дорисуйте недостающие области изображения
+                            с сохранением исходного стиля и деталей
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg11.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg12.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Создать логотип</h2>
+                          <p class="h-block-text">
+                            Дайте вашей идее визуальную форму. Превратите
+                            концепцию в запоминающийся символ
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg13.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg14.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Плакаты и постеры</h2>
+                          <p class="h-block-text">
+                            Получайте готовые макеты с продуманной композицией
+                            и яркой визуализацией
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg15.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg16.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-tolls-slide">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Пак иконок</h2>
+                          <p class="h-block-text">
+                            Создайте полноценный набор иконок в едином стиле
+                            для приложений, интерфейсов и бренд-систем
+                          </p>
+                        </div>
+                        <div class="h-tolls-slide-img G-flex">
+                          <img
+                            src="assets/images/hTollsSlideImg17.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-low-quality"
+                            height="285"
+                          />
+
+                          <img
+                            src="assets/images/hTollsSlideImg18.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            class="h-high-quality"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="btn-white h-tolls-btn" href="#">
+                  <div class="btn-white-icon G-center">
+                    <i class="icon icon-stars"></i>
+                  </div>
+                  <span>Начать бесплатно</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="h-tolls-prev h-tolls-arrow swiper-button-prev">
+              <i class="icon icon-hArrowRight"></i>
+            </div>
+            <div class="h-tolls-next h-tolls-arrow swiper-button-next">
+              <i class="icon icon-hArrowRight"></i>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-possibilities-section h-section">
+          <div class="container">
+            <div class="h-possibilities-body">
+              <h3 class="h-section-title fade-top">
+                Воплощайте самые
+                <span class="mobile-text-wrap"
+                  >смелые
+                  <span class="desktop-text-wrap">идеи вместе с AI</span></span
+                >
+              </h3>
+              <p class="h-section-sub-title fade-bottom">
+                Превращайте любые идеи
+                <span class="mobile-text-wrap">в изображения. ИИ сделает</span>
+                невозможное возможным
+              </p>
+
+              <div class="h-possibilities-cnt-wrapper fade-bottom h-block-cnt">
+                <div data-id="1" class="h-possibilities-media">
+                  <img
+                    src="assets/images/hPossibilitiesMedia1.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+
+                <div data-id="2" class="h-possibilities-media">
+                  <img
+                    src="assets/images/hPossibilitiesMedia2.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+
+                <div data-id="3" class="h-possibilities-media">
+                  <img
+                    src="assets/images/hPossibilitiesMedia3.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+
+                <div data-id="4" class="h-possibilities-media">
+                  <img
+                    src="assets/images/hPossibilitiesMedia4.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="600"
+                  />
+                </div>
+
+                <div class="h-possibilities-items G-flex">
+                  <div data-id="1" class="h-possibilities-item">
+                    <h3 class="h-block-title">Фотореализм</h3>
+                    <p class="h-block-text">
+                      Создавайте максимально реалистичные фото с деталями,
+                      которые выглядят естественно
+                    </p>
+                  </div>
+
+                  <div data-id="2" class="h-possibilities-item">
+                    <h3 class="h-block-title">Стилизация фото</h3>
+                    <p class="h-block-text">
+                      Меняйте настроение снимка: от акварельной нежности
+                      до цифрового абстракционизма
+                    </p>
+                  </div>
+
+                  <div data-id="3" class="h-possibilities-item">
+                    <h3 class="h-block-title">Генерация текста</h3>
+                    <p class="h-block-text">
+                      Создавайте готовый к использованию текст для рекламы,
+                      соцсетей и макетов
+                    </p>
+                  </div>
+
+                  <div data-id="4" class="h-possibilities-item">
+                    <h3 class="h-block-title">Вектор в SVG</h3>
+                    <p class="h-block-text">
+                      Генерируйте точные векторные изображения
+                      с профессиональной детализацией
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="h-possibilities-swiper-block fade-bottom">
+                <div class="h-possibilities-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="h-possibilities-slide G-flex">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Фотореализм</h2>
+                          <p class="h-block-text">
+                            Создавайте максимально реалистичные фото с деталями,
+                            которые выглядят естественно
+                          </p>
+                        </div>
+                        <div class="h-possibilities-slide-img G-flex">
+                          <img
+                            src="assets/images/hPossibilitiesSlideImg1.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-possibilities-slide G-flex">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Стилизация фото</h2>
+                          <p class="h-block-text">
+                            Меняйте настроение снимка: от акварельной нежности
+                            до цифрового абстракционизма
+                          </p>
+                        </div>
+                        <div class="h-possibilities-slide-img G-flex">
+                          <img
+                            src="assets/images/hPossibilitiesSlideImg2.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-possibilities-slide G-flex">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Генерация текста</h2>
+                          <p class="h-block-text">
+                            Создавайте готовый к использованию текст
+                            для рекламы, соцсетей и макетов
+                          </p>
+                        </div>
+                        <div class="h-possibilities-slide-img G-flex">
+                          <img
+                            src="assets/images/hPossibilitiesSlideImg3.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-possibilities-slide G-flex">
+                        <div class="h-tolls-slide-texts">
+                          <h2 class="h-block-title">Вектор в SVG</h2>
+                          <p class="h-block-text">
+                            Генерируйте точные векторные изображения
+                            с профессиональной детализацией
+                          </p>
+                        </div>
+                        <div class="h-possibilities-slide-img G-flex">
+                          <img
+                            src="assets/images/hPossibilitiesSlideImg4.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="285"
+                            height="285"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-how-work-section">
+          <div class="container">
+            <div class="h-work-body">
+              <h4 class="h-section-title fade-top">
+                Тот редкий случай, когда
+                <span class="mobile-text-wrap"
+                  >просто —
+                  <span class="desktop-text-wrap">значит мощно</span></span
+                >
+              </h4>
+              <p class="h-section-sub-title fade-bottom">
+                <span class="mobile-text-wrap"
+                  >Интерфейс, в котором не нужно</span
+                >
+                разбираться —
+                <span class="desktop-text-wrap"
+                  >его можно понять
+                  <span class="mobile-text-wrap">с первого взгляда</span></span
+                >
+              </p>
+              <div class="h-work-media fade-bottom">
+                <picture>
+                  <source
+                    srcset="assets/images/hWorkMediaMobiile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/hWorkMedia.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="996"
+                    height="530"
+                  />
+                </picture>
+              </div>
+
+              <a class="btn-black h-work-btn" href="#">
+                <div class="btn-black-icon G-center">
+                  <i class="icon icon-stars"></i>
+                </div>
+                <span>Попробовать бесплатно</span>
+              </a>
+
+              <div class="h-work-partners-items fade-bottom">
+                <p>
+                  НАДЁЖНОСТЬ И ДОВЕРИЕ
+                  <span class="mobile-text-wrap">ИННОВАЦИОННЫХ КОМПАНИЙ</span>
+                </p>
+
+                <div class="h-work-partners-track G-flex">
+                  <div class="h-work-partners-item h-work-partner-item--one G-flex"   >
+                    <img
+                      src="assets/images/hWorkPartnerItem.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="163"
+                      height="60"
+                    />
+                  </div>
+
+                  <div  class="h-work-partners-item h-work-partner-item--two G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="151"
+                      height="29"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--tree G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem3.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="170"
+                      height="37"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--for G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem4.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="141"
+                      height="55"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--five G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem5.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="130"
+                      height="40"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--one G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="163"
+                      height="60"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--two G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="151"
+                      height="29"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--tree G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem3.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="170"
+                      height="37"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--for G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem4.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="141"
+                      height="55"
+                    />
+                  </div>
+
+                  <div
+                    class="h-work-partners-item h-work-partner-item--five G-flex"
+                  >
+                    <img
+                      src="assets/images/hWorkPartnerItem5.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="130"
+                      height="40"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-universe-section">
+          <div class="h-container-big">
+            <div class="h-universe-body">
+              <h5 class="h-section-title fade-top">
+                Создайте свою
+                <span class="text-wrap">визуальную вселенную</span>
+              </h5>
+              <p class="h-section-sub-title fade-bottom">
+                <span class="mobile-text-wrap"
+                  >Загрузите исходники и мгновенно</span
+                >
+                получите
+                <span class="desktop-text-wrap"
+                  >готовый набор стилей
+                  <span class="mobile-text-wrap">для любых задач</span></span
+                >
+              </p>
+
+              <div class="h-universe-columns fade-bottom h-block-cnt">
+                <div class="h-universe-column ">
+                  <div class="h-universe-track G-flex">
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem5.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem5.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="h-universe-column">
+                  <div class="h-universe-track--right G-flex">
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem7.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem8.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem6.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem9.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem10.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem11.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem7.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-big-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem8.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem6.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem9.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem10.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                    <div class="h-universe-samll-item G-flex">
+                      <img
+                        src="assets/images/hUniverseItem11.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="532"
+                        height="380"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-trust-section">
+          <div class="container">
+            <div class="h-trust-body">
+              <div class="h-trust-adds fade-top G-align-center">
+                <div class="h-trust-add G-flex">
+                  <img
+                    src="assets/images/hTrustAdd.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="90"
+                    height="37"
+                  />
+                </div>
+                <div class="h-trust-add G-flex">
+                  <img
+                    src="assets/images/hTrustAdd2.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="90"
+                    height="37"
+                  />
+                </div>
+
+                <div class="h-trust-add G-flex">
+                  <img
+                    src="assets/images/hTrustAdd3.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="90"
+                    height="37"
+                  />
+                </div>
+              </div>
+
+              <div class="h-trust-swiper-block fade-bottom">
+                <div class="h-trust-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="h-trust-slide">
+                        <h6>
+                          Загрузил свои работы — получил готовый стиль.
+                          Нейросеть экономит часы и сохраняет мой почерк
+                        </h6>
+                        <p>Роман Пресс, креатор</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-trust-slide">
+                        <h6>
+                          Экономит мне 2–3 часа в день. Генерация и редактор —
+                          качество на уровне проф. сервисов для работы
+                          с графикой
+                        </h6>
+                        <p>Даниэла Маринова, продуктовый дизайнер Figma</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="h-trust-slide">
+                        <h6>
+                          Инструмент для создания стилей спас наш брендинг.
+                          Загрузила референсы — получила шаблоны для всех
+                          каналов. Согласованность визуала теперь на автомате
+                        </h6>
+                        <p>
+                          Анастасия Гончарова, старший бренд-дизайнер в Manychat
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="h-trust-slide">
+                        <h6>
+                          Внедрили для всей команды дизов. Ускорили создание
+                          концепт-артов и графики в 3 раза
+                        </h6>
+                        <p>Иван Коршун, директор по дизайну в Playgama</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="h-footer">
+        <div class="container">
+          <div class="h-footer-body fade-top G-column-center">
+            <h6>
+              Воплотите идеи
+              <span class="text-wrap">в реальность прямо сейчас!</span>
+            </h6>
+
+            <a href="#"> Начать бесплатно </a>
+          </div>
+        </div>
+
+        <a href="index.html" class="h-footer-logo  G-flex">
+          <picture>
+            <source
+              srcset="assets/images/hfooterLogoMobiile.svg"
+              media="(max-width: 576px)"
+              type="image/webp"
+            />
+            <img
+              src="assets/images/HfooterLogo.svg"
+              alt="photo"
+              loading="lazy"
+              decoding="async"
+              width="1440"
+              height="334"
+            />
+          </picture>
+        </div>
+
+        <p class="h-footer-clue">© 2025 Recraft AI, Inc.</p>
+      </a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

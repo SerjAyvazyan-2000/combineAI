@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Qwen — мощный AI-ассистент для генерации изображений, поиска, программирования и глубокого анализа. Задайте вопрос и получите точный, быстрый и полезный ответ.">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QWEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body{
+       background: #f6f6f6;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="d-header fade-top">
+        <div class="container">
+          <div class="d-header-body G-align-center">
+            <a href="index.html" class="e-header-logo">
+              <img
+                src="assets/images/Elogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="93"
+                height="26"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <a href="#" class="d-btn-register G-align-center">
+              <i class="icon icon-stash_arrow-up"></i>
+              <span
+                >Регистрация <span class="desktop-block">бесплатно</span></span
+              >
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="e-hero-section">
+          <div class="container">
+            <div class="e-hero-body G-column-center">
+              <div class="e-hero-titles fade-left">
+                <h1>
+                  Спросите <span class="text-primary">Qwen</span>,
+                  <span class="text-wrap">знайте больше</span>
+                </h1>
+              </div>
+              <div class="e-hero-cnt">
+                <div class="e-hero-textarea fade-top">
+                  <label class="e-textarea-wrapper">
+                    <span class="e-textarea-placeholder">
+                      <span class="e-placeholder-pipe">|</span>
+                      <span class="e-placeholder-text"
+                        >Помоги разобраться в теме</span
+                      >
+                    </span>
+
+                    <textarea placeholder="" name="text" id="text"></textarea>
+                  </label>
+
+                  <a
+                    href="#"
+                    class="e-hero-link G-center"
+                    aria-label="Открыть чат"
+                  >
+                    <i class="icon icon-arrowLeft"></i>
+                  </a>
+                </div>
+                <div class="e-hero-hints fade-bottom">
+                  <button>Генерация картинок</button>
+                  <button>Исследование</button>
+                  <button>Поиск</button>
+                  <button>Web-разработка</button>
+                  <button>Изменение картинок</button>
+                  <button>Генерация видео</button>
+                </div>
+              </div>
+              <div class="e-hero-items fade-top G-flex">
+                <div class="e-hero-item e-hero-big-item">
+                  <div class="e-hero-item-texts">
+                    <div class="e-hero-item-header G-align-center">
+                      <h2 class="e-block-title">Чат с Qwen</h2>
+                      <a class="e-arrow-link" href="#">
+                        <span>Попробовать</span>
+                        <i class="icon icon-stash_arrow-up"></i>
+                      </a>
+                    </div>
+                    <p class="e-block-text">
+                      Qwen Chat — это AI-ассистент для всех, основанный на
+                      моделях серии Qwen. Он бесплатен, доступен для всех и
+                      готов помочь в творчестве, сотрудничестве и безграничных
+                      возможностях
+                    </p>
+                  </div>
+                  <div class="e-hero-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/eHeroItemImgMobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/eHeroItemImg.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="e-hero-item e-hero-small-item">
+                  <div class="e-hero-item-texts">
+                    <div class="e-hero-item-header G-align-center">
+                      <h2 class="e-block-title">Приложение</h2>
+
+                      <a class="e-arrow-link" href="#">
+                        <span>Попробовать</span>
+                        <i class="icon icon-stash_arrow-up"></i>
+                      </a>
+                    </div>
+                    <p class="e-block-text">
+                      Используйте Qwen на вашем телефоне или компьютере без
+                      каких-либо ограничений
+                    </p>
+                  </div>
+                  <div class="e-hero-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/eHeroItem2ImgMobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/eHeroItemImg2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="264"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="e-hero-item e-hero-small-item">
+                  <div class="e-hero-item-texts">
+                    <div class="e-hero-item-header G-align-center">
+                      <h2 class="e-block-title">API</h2>
+
+                      <a class="e-arrow-link" href="#">
+                        <span>Попробовать</span>
+                        <i class="icon icon-stash_arrow-up"></i>
+                      </a>
+                    </div>
+                    <p class="e-block-text">
+                      API Qwen, который использует формат API, совместимый с API
+                      OpenAI
+                    </p>
+                  </div>
+                  <div class="e-hero-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/eHeroItem3ImgMobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/eHeroItemImg3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="264"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="e-possibilities-section">
+          <div class="e-container">
+            <div class="e-possibilities-body">
+              <div class="e-possibilities-titles fade-top G-column-center">
+                <h3 class="e-section-title">Возможности сервиса</h3>
+                <a class="e-arrow-link" href="#">
+                  <span>Попробовать все</span>
+                  <i class="icon icon-stash_arrow-up"></i>
+                </a>
+              </div>
+
+              <div class="e-possibilities-items d-block-cnt">
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/ePossibilitiesItemImgMobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      aria-label="Открыть подробности"
+                      class="e-possibilities-link G-center"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Генерация картиок</h3>
+                    <p class="e-block-text">
+                      Функция позволяет создавать визуальный контент —
+                      изображения, иллюстрации или графические элементы — на
+                      основе текстового описания или идеи. Вы можете указать
+                      стиль, настроение, детали объектов, и нейросеть
+                      сгенерирует уникальную картинку.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/ePossibilitiesItemImg2Mobie.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      class="e-possibilities-link G-center"
+                      aria-label="Открыть подробности"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Глубокое исследование</h3>
+                    <p class="e-block-text">
+                      Эта функция предназначена для проведения углубленного
+                      анализа информации по сложным темам. Нейросеть может
+                      собирать, обобщать и интерпретировать данные из множества
+                      источников, выявлять тренды, делать выводы и предоставлять
+                      структурированные отчеты.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="
+                          assets/images/ePossibilitiesItemImg3Mobiile.webp
+                        "
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      aria-label="Открыть подробности"
+                      class="e-possibilities-link G-center"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Программирование</h3>
+                    <p class="e-block-text">
+                      Qwen помогает писать, читать, анализировать и
+                      оптимизировать код на различных языках программирования
+                      (Python, JavaScript, Java, C++ и др.). Он может
+                      генерировать фрагменты кода, исправлять ошибки, объяснять
+                      логику работы программы, а также предлагать улучшения и
+                      альтернативные подходы.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/ePossibilitiesItemImg4.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      aria-label="Открыть подробности"
+                      class="e-possibilities-link G-center"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Обдумывание</h3>
+                    <p class="e-block-text">
+                      Это режим для мозгового штурма, генерации идей, решения
+                      нестандартных задач и рассмотрения разных точек зрения.
+                      Нейросеть помогает «обдумать» проблему, предложить
+                      варианты действий, проанализировать последствия и найти
+                      неочевидные решения.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/ePossibilitiesItemImg5Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg5.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      aria-label="Открыть подробности"
+                      class="e-possibilities-link G-center"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Поиск в Сети</h3>
+                    <p class="e-block-text">
+                      Функция позволяет получать актуальную информацию из
+                      интернета в реальном времени. В отличие от базы знаний
+                      модели, этот режим обращается к внешним источникам, чтобы
+                      предоставить свежие новости, факты, данные, ссылки и
+                      статьи.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="e-possibilities-item animate-item">
+                  <div class="e-possibilities-item-img">
+                    <picture>
+                      <source
+                        srcset="assets/images/ePossibilitiesItemImg6Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/ePossibilitiesItemImg6.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="549"
+                        height="367"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <a
+                      href="#"
+                      aria-label="Открыть подробности"
+                      class="e-possibilities-link G-center"
+                    >
+                      <i class="icon icon-arrowLeft"></i>
+                    </a>
+                  </div>
+                  <div class="e-possibilities-item-texts">
+                    <h3 class="e-block-title">Многозадачность</h3>
+                    <p class="e-block-text">
+                      Режим, позволяющий одновременно работать с несколькими
+                      задачами или выполнять сложные многоэтапные процессы.
+                      Например, можно попросить нейросеть проанализировать
+                      данные, сгенерировать отчет, оформить его в виде
+                      презентации и предложить варианты дальнейших действий —
+                      всё в одном запросе.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="e-latest-research-section">
+          <div class="container">
+            <div class="e-latest-research-body">
+              <div class="e-possibilities-titles G-column-center">
+                <h4 class="e-section-title">Последние исследования</h4>
+                <a class="e-arrow-link" href="#">
+                  <span>Читать всё</span>
+                  <i class="icon icon-stash_arrow-up"></i>
+                </a>
+              </div>
+              <div class="e-latest-items d-block-cnt">
+                <div class="e-latest-item animate-item">
+                  <div class="e-latest-item-texts G-flex-column">
+                    <h4 class="e-block-title">
+                      Qwen DeepResearch: Когда вдохновение становится
+                      реальностью
+                    </h4>
+                    <p class="e-block-text">
+                      Как умирает вдохновение? Обычно не от того, что оно
+                      «недостаточно хорошее», а от того, что вызывает «слишком
+                      много хлопот». Когда мысль...
+                    </p>
+                  </div>
+
+                  <a
+                    class="e-arrow-link e-latest-link"
+                    aria-label="Открыть чат"
+                    href="#"
+                  >
+                    <span>Узнать больше</span>
+                    <i class="icon icon-stash_arrow-up"></i>
+                  </a>
+                </div>
+
+                <div class="e-latest-item animate-item">
+                  <div class="e-latest-item-texts G-flex-column">
+                    <h4 class="e-block-title">Qwen-3 Max. Громкая новинка</h4>
+                    <p class="e-block-text">
+                      После выпуска серии Qwen3-2507 мы с радостью представляем
+                      Qwen3-Max — нашу самую крупную и мощную модель на
+                      сегодняшний день. Предварительная версия
+                      Qwen3-Max-Instruct в настоящее время занимает...
+                    </p>
+                  </div>
+
+                  <a
+                    class="e-arrow-link e-latest-link"
+                    href="#"
+                    aria-label="Открыть чат"
+                  >
+                    <span>Узнать больше</span>
+                    <i class="icon icon-stash_arrow-up"></i>
+                  </a>
+                </div>
+
+                <div class="e-latest-item animate-item">
+                  <div class="e-latest-item-texts G-flex-column">
+                    <h4 class="e-block-title">
+                      Qwen3-LiveTranslate: Мгновенный мультимодальный перевод в
+                      реальном времени
+                    </h4>
+                    <p class="e-block-text">
+                      Qwen3-LiveTranslate-Flash обеспечивает высокоточный,
+                      сверхбыстрый и исключительно надёжный перевод аудио и
+                      видео на несколько языков в режиме реального времени.
+                      Благодаря широким возможностям Qwen3-Omni и...
+                    </p>
+                  </div>
+
+                  <a
+                    class="e-arrow-link e-latest-link"
+                    href="#"
+                    aria-label="Открыть чат"
+                  >
+                    <span>Узнать больше</span>
+                    <i class="icon icon-stash_arrow-up"></i>
+                  </a>
+                </div>
+                <div class="e-latest-item animate-item">
+                  <div class="e-latest-item-texts G-flex-column">
+                    <h4 class="e-block-title">
+                      Qwen3-VL: Острее зрение, глубже мысль, шире взгляд...
+                    </h4>
+                    <p class="e-block-text">
+                      Сегодня мы официально запускаем серию Qwen3-VL — самую
+                      мощную визуально-языковую модель в семействе Qwen на
+                      данный момент. В этом поколении мы внесли значительные
+                      улучшения по множеству направлений...
+                    </p>
+                  </div>
+
+                  <a
+                    class="e-arrow-link e-latest-link"
+                    href="#"
+                    aria-label="Открыть чат"
+                  >
+                    <span>Узнать больше</span>
+                    <i class="icon icon-stash_arrow-up"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="e-footer">
+        <div class="e-footer-container">
+          <div class="e-footer-body G-align-center">
+            <a href="index.html" class="e-footer-logo G-flex">
+              <img
+                src="assets/images/EFooterLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="93"
+                height="26"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <div class="e-footer-texts G-align-center">
+              <p>Qwen © 2025</p>
+              <p>Powered by Alibaba Cloud</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>
+
+
+
+
+

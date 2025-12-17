@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, uses-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Runway</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      background: #ffffff;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="fade-top">
+        <div class="container">
+          <div class="header-body G-align-center">
+            <a class="header-logo G-flex" href="index.html" class="logo">
+              <img
+                src="assets/images/logo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="119"
+                height="24"
+                style="width: 100%; height: auto"
+              />
+            </a>
+
+            <div class="header-actons G-align-center">
+              <a class="btn-login" href="#"> Вход </a>
+              <a class="btn-register" href="#"> Регистрация </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="b-hero-section G-flex-column">
+          <div class="b-hero-video">
+            <video
+              muted
+              playsinline
+              autoplay
+              loop
+              preload="none"
+              poster="assets/images/video-preview.webp"
+              id="heroVideo"
+            >
+              <source
+                data-src="assets/images/BheroVideo.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div class="b-hero-titles fade-bottom">
+            <h1 class="b-hero-title">Делайте <span>всё</span></h1>
+            <a class="btn-white b-hero-btn" href="#">
+              <div class="btn-white-icon G-center">
+                <i class="icon icon-stars"></i>
+              </div>
+              <span>Попробовать бесплатно</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="b-partners-section">
+          <div class="container-big">
+            <div class="b-partners-items fade-bottom">
+              <div class="b-partners-left-blur G-flex">
+                <img
+                  src="assets/images/partnersBlur1.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="425"
+                  height="204"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+              <div class="b-partners-track G-align-center">
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner1.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="90"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner2.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="44"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner3.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="86"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner4.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="178"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner5.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="191"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner6.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="141"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner7.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="192"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner8.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="192"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner9.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="66"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner10.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="264"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner11.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="208"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner12.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="50"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner13.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="192"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner14.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="209"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner15.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="231"
+                    height="44"
+                  />
+                </div>
+
+                <div class="b-partner-item">
+                  <img
+                    src="assets/images/Apartner16.webp"
+                    decoding="async"
+                    loading="lazy"
+                    alt="photo"
+                    width="34"
+                    height="44"
+                  />
+                </div>
+              </div>
+
+              <div class="b-partners-right-blur G-flex">
+                <img
+                  src="assets/images/partnersBlur2.webp"
+                  decoding="async"
+                  loading="lazy"
+                  alt="photo"
+                  width="425"
+                  height="204"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+            </div>
+
+            <div class="b-partners-text fade-bottom">
+              <p>
+                Уникальный набор инструментов для творчества,
+                <span class="desktop-text-wrap"
+                  >в котором есть всё необходимое для создания</span
+                >
+                любого видео, изображения или другого
+                <span class="desktop-text-wrap">контента.</span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-instruments-section section">
+          <div class="container">
+            <div class="b-instruments-body">
+              <div class="section-titles fade-top">
+                <h2>
+                  Десятки инструментов.
+                  <span class="desktop-text-wrap"
+                    ><span class="mobile-text-wrap"
+                      >Бесконечные возможности</span
+                    >
+                    <span class="mobile-text-wrap">для творчества</span></span
+                  >
+                </h2>
+              </div>
+
+              <div
+                class="b-instruments-categories block-cnt G-flex fade-bottom"
+              >
+                <button class="active" data-id="1">Преобразование видео</button>
+                <button data-id="2">Доски настроения</button>
+                <button data-id="3">Дизайн интерьера</button>
+                <button data-id="4">Создание персонажа</button>
+                <button data-id="5">Виртуальная примерка</button>
+                <button data-id="6">Архитектурные проекты</button>
+                <button data-id="7">Раскадровка</button>
+                <button data-id="8">Анимирование</button>
+                <button data-id="9">Генерация сюжета</button>
+                <button data-id="10">Визуальные эффекты</button>
+              </div>
+
+              <div class="b-instruments-wrapper fade-bottom">
+                <div data-id="1" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Создание, редактирование
+                        <span class="text-wrap">и преобразование видео</span>
+                      </h3>
+                      <p class="block-text">
+                        Преобразуйте сцены, создавайте раскадровки и применяйте
+                        визуальные эффекты. От смены наряда до полного изменения
+                        художественного стиля.
+                      </p>
+                    </div>
+                    <div class="b-instrument-item-categories">
+                      <button data-val="1" class="active">Сменить наряд</button>
+                      <button data-val="2">Удалить фон</button>
+                      <button data-val="3">Замена стиля</button>
+                      <button data-val="4">Изменить объект</button>
+                      <button data-val="5">Удалить элементы</button>
+                    </div>
+                  </div>
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <div class="b-after-before">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg5.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <div class="b-after-before">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg6.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <div class="b-after-before">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+
+                  <div data-val="4" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg7.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <div class="b-after-before">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                  <div data-val="5" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg8.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+
+                    <div class="b-after-before">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-id="2" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Создавайте и редактируйте индивидуальные мудборды
+                      </h3>
+                      <p class="block-text">
+                        Создайте доску настроения из одного изображения.
+                        Загрузите референс — и мгновенно получайте фото и видео
+                        в том же стиле и атмосфере.
+                      </p>
+                    </div>
+                    <div class="b-instrument-tag--one">
+                      <div class="b-instrument-tag--one-img G-flex">
+                        <img
+                          src="assets/images/bInstrumentImg3.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instrument-tag--one-texts G-align-end">
+                        <p>
+                          Создайте ещё несколько изображений в том же стиле
+                          и в том же месте
+                        </p>
+                        <div class="b-instrument-tag--one-icon G-center">
+                          <i class="icon icon-arrow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="b-instrument-img G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg9.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="3" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Стилизуйте любое
+                        <span class="text-wrap">пространство за секунды</span>
+                      </h3>
+                      <p class="block-text">
+                        Создайте интерьер без сложных программ. Просто загрузите
+                        фото своей комнаты и добавьте предметы, которые хотите
+                        в ней разместить.
+                      </p>
+                    </div>
+                    <div class="b-instruments-tag--two G-flex">
+                      <div class="b-instrument-tag--one-img G-align-start">
+                        <img
+                          src="assets/images/bInstrumentImg13.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                        <img
+                          src="assets/images/bInstrumentImg14.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="48"
+                          height="48"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instruments-tag--two-categories">
+                        <p>Визуализируйте интерьер с помощью декораций</p>
+                        <div class="b-instrument-item-categories">
+                          <button data-val="1" class="active">Диван</button>
+                          <button data-val="2">Растения</button>
+                          <button data-val="3">Журнальный столик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg10.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg11.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg12.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="4" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Наложите свой голос и мимику на любого персонажа
+                      </h3>
+                      <p class="block-text">
+                        Синхронизация лица и голоса с любым персонажем. Запишите
+                        на видео свою речь с любой мимикой — получили готовое
+                        видео.
+                      </p>
+                    </div>
+                    <div class="b-instrument-item-categories">
+                      <button data-val="1" class="active">
+                        Первый персонаж
+                      </button>
+                      <button data-val="2">Второй персонаж</button>
+                      <button data-val="3">Третий персонаж</button>
+                    </div>
+                  </div>
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg15.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg16.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg17.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="5" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Примеряйте любой образ
+                        <span class="text-wrap">в пару кликов</span>
+                      </h3>
+                      <p class="block-text">
+                        Вы можете менять образ персонажа на бесконечное
+                        количество нарядов. Всё, что потребуется — одно фото
+                        самого персонажа и фото одежды.
+                      </p>
+                    </div>
+                    <div class="b-instruments-tag--two G-flex">
+                      <div class="b-instrument-tag--one-img G-align-start">
+                        <img
+                          src="assets/images/bInstrumentImg18.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                        <img
+                          src="assets/images/bInstrumentImg19.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="48"
+                          height="48"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instruments-tag--two-categories">
+                        <p>
+                          Выберите модель
+                          <span class="text-wrap">и одежду для генераци</span>
+                        </p>
+                        <div class="b-instrument-item-categories">
+                          <button data-val="1" class="active">Наряд 1</button>
+                          <button data-val="2">Наряд 2</button>
+                          <button data-val="3">Наряд 3</button>
+                          <button data-val="4">Наряд 4</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg20.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg21.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg22.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="4" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg23.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="6" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Придумывайте новые
+                        <span class="text-wrap">архитектурные концепции</span>
+                      </h3>
+                      <p class="block-text">
+                        Ищите идеи в окружающем мире. Используйте найденные
+                        предметы и текстуры для новых концепций в архитектуре
+                        и дизайне.
+                      </p>
+                    </div>
+                    <div class="b-instruments-tag--two G-flex">
+                      <div class="b-instrument-tag--one-img G-align-start">
+                        <img
+                          src="assets/images/bInstrumentImg24.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instruments-tag--two-categories">
+                        <p>
+                          Выберите идею
+                          <span class="text-wrap">для создания проекта</span>
+                        </p>
+                        <div class="b-instrument-item-categories">
+                          <button data-val="1" class="active">
+                            Первый дизайн
+                          </button>
+                          <button data-val="2">Второй дизайн</button>
+                          <button data-val="3">Третий дизайн</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg25.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg26.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg27.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="7" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Визуализируйте сцены
+                        <span class="text-wrap">по текстовому описанию</span>
+                      </h3>
+                      <p class="block-text">
+                        Создавайте готовые раскадровки за считанные минуты.
+                        Просто загрузите основное изображение и введите
+                        текстовое описание.
+                      </p>
+                    </div>
+                    <div class="b-instrument-tag--one">
+                      <div class="b-instrument-tag--one-img G-flex">
+                        <img
+                          src="assets/images/bInstrumentImg28.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instrument-tag--one-texts G-align-end">
+                        <p>
+                          Создайте покадровую иллюстрацию об интересной жизни
+                          человека в горах
+                        </p>
+                        <div class="b-instrument-tag--one-icon G-center">
+                          <i class="icon icon-arrow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="b-instrument-img G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg29.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="8" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Придумывайте новые
+                        <span class="text-wrap">архитектурные концепции</span>
+                      </h3>
+                      <p class="block-text">
+                        Ищите идеи в окружающем мире. Используйте найденные
+                        предметы и текстуры для новых концепций в архитектуре
+                        и дизайне.
+                      </p>
+                    </div>
+                    <div class="b-instruments-tag--tree G-flex">
+                      <img
+                        src="assets/images/bInstrumentImg30.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="387"
+                        height="220"
+                        style="width: 100%; height: auto"
+                      />
+                    </div>
+                  </div>
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg31.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="9" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Генерируйте различные
+                        <span class="text-wrap"
+                          >обстоятельста для ваших фото</span
+                        >
+                      </h3>
+                      <p class="block-text">
+                        Превратите одно селфи в бесконечное множество новых
+                        изображений, на которых вы предстанете в разных образах,
+                        нарядах и локациях.
+                      </p>
+                    </div>
+                    <div class="b-instruments-tag--two G-flex">
+                      <div class="b-instrument-tag--one-img G-align-start">
+                        <img
+                          src="assets/images/bInstrumentImg32.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="80"
+                          height="80"
+                          style="width: 100%; height: auto"
+                        />
+                      </div>
+                      <div class="b-instruments-tag--two-categories">
+                        <p>
+                          Поместить фото
+                          <span class="text-wrap">в обстоятельства</span>
+                        </p>
+                        <div class="b-instrument-item-categories">
+                          <button data-val="1" class="active">
+                            Виноградник
+                          </button>
+                          <button data-val="2">Лодка</button>
+                          <button data-val="3">Автомобиль</button>
+                          <button data-val="4">Бег</button>
+                          <button data-val="5">Ресторан</button>
+                          <button data-val="6">Ночь</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg33.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg34.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg35.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="4" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg36.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="5" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg37.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="6" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg38.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div data-id="10" class="b-instrument-item">
+                  <div class="b-instrument-texts-item">
+                    <div class="b-instrument-text-titles G-flex-column">
+                      <h3 class="block-title">
+                        Визуализируйте и меняйте
+                        <span class="text-wrap">стили на вашем фото</span>
+                      </h3>
+                      <p class="block-text">
+                        С помощью Runway вы можете создавать сложные визуальные
+                        эффекты, просто описывая то, что хотите увидеть.
+                      </p>
+                    </div>
+                    <div class="b-instrument-item-categories">
+                      <button data-val="1" class="active">Сменить наряд</button>
+                      <button data-val="2">Изменить стиль</button>
+                      <button data-val="3">Спецэффекты</button>
+                      <button data-val="4">Новые концепции</button>
+                      <button data-val="5">Замена мебели</button>
+                    </div>
+                  </div>
+                  <div data-val="1" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg39.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="2" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg40.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="3" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg41.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+
+                  <div data-val="4" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg42.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                  <div data-val="5" class="b-instrument-img-item G-flex-column">
+                    <picture>
+                      <img
+                        src="assets/images/bInstrumentImg43.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="793"
+                        height="446"
+                        style="width: 100%; height: auto"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="b-instruments-mobile-blur b-instruments-left-blur">
+                <img
+                  src="assets/images/bInstrumentLeftBlur.png"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  width="120"
+                  height="35"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+
+              <div class="b-instruments-mobile-blur b-instruments-right-blur">
+                <img
+                  src="assets/images/bInstrumentRightBlur.png"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  width="120"
+                  height="35"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-how-work-section section">
+          <div class="container">
+            <div class="b-how-work-body">
+              <div class="section-titles fade-top">
+                <h2>
+                  Как ведущие мировые
+                  <span class="mobile-text-wrap">организации</span>
+                  <span class="desktop-text-wrap">
+                    и артисты используют
+                    <span class="mobile-text-wrap">Runway</span></span
+                  >
+                </h2>
+                <p>
+                  <span class="mobile-text-wrap"
+                    >Runway помогает изменить подход</span
+                  >
+                  к работе во всех
+                  <span class="desktop-text-wrap"
+                    >отраслях. Узнайте
+                    <span class="mobile-text-wrap">больше ниже.</span></span
+                  >
+                </p>
+              </div>
+
+              <div class="b-work-tags fade-bottom block-cnt G-flex">
+                <div>ИИ для рекламы</div>
+                <div>ИИ для создания визуальных эффектов</div>
+                <div>ИИ для игр</div>
+              </div>
+              <div class="b-work-titles">
+                <h3>Истории клиентов</h3>
+              </div>
+              <div class="b-work-swiper-block fade-bottom">
+                <div class="b-work-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="b-work-slide">
+                        <div class="b-work-slide-img G-flex">
+                          <img
+                            src="assets/images/bWorkSlideImg1.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="386"
+                            height="240"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="b-work-slide-texts">
+                          <p>Истории клиентов</p>
+                          <h3>
+                            Как «House of David» с помощью Runway стал последним
+                            хитом Amazon
+                          </h3>
+                          <a href="#">Читать полностью</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="b-work-slide">
+                        <div class="b-work-slide-img G-flex">
+                          <img
+                            src="assets/images/bWorkSlideImg2.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="386"
+                            height="240"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="b-work-slide-texts">
+                          <p>Истории клиентов</p>
+                          <h3>
+                            Роль Runway в создании «Life After People»
+                            от History Channel: вклад Eggplant Picture & Sound
+                          </h3>
+                          <a href="#">Читать полностью</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="b-work-slide">
+                        <div class="b-work-slide-img G-flex">
+                          <img
+                            src="assets/images/bWorkSlideImg3.webp"
+                            alt="photo"
+                            loading="lazy"
+                            decoding="async"
+                            width="386"
+                            height="240"
+                            style="width: 100%; height: auto"
+                          />
+                        </div>
+                        <div class="b-work-slide-texts">
+                          <p>Истории клиентов</p>
+                          <h3>
+                            За кулисами телевизионной рекламы Under Armour
+                            от Runway
+                          </h3>
+                          <a href="#">Читать полностью</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-work-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-picture-section section">
+          <div class="b-picture-container">
+            <div class="b-picture-body fade-bottom">
+              <picture>
+                <source
+                  srcset="assets/images/bPictureItemMobile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/bPictureItem.webp"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  width="793"
+                  height="446"
+                  style="width: 100%; height: auto"
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-possibilities-section section">
+          <div class="container">
+            <div class="section-titles fade-top">
+              <h2>Инструменты для всего</h2>
+              <p>
+                <span class="mobile-text-wrap"
+                  >Постоянно растущий функционал</span
+                >
+                для любых задач,
+                <span class="desktop-text-wrap"
+                  >который помогает
+                  <span class="mobile-text-wrap"
+                    >достичь высоких результатов.</span
+                  ></span
+                >
+              </p>
+            </div>
+
+            <div class="b-possibilities-swiper-block fade-bottom">
+              <div class="swiper b-possibilities-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--one"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Удаление объектов любой сложности
+                        </h3>
+                        <p class="block-text">
+                          Удаляйте нежелательные объекты с помощью простой
+                          команды
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg1.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--two"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">Замена фона для изображений</h3>
+                        <p class="block-text">
+                          Преобразуйте фото товаров без пересъёмки. Просто
+                          опишите фон
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg2.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--tree"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Высокая детализация и качество видео
+                        </h3>
+                        <p class="block-text">
+                          Повышайте разрешение любого видео одним щелчком мыши
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg3.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--for"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Оживление видео любым диалогом
+                        </h3>
+                        <p class="block-text">
+                          Реалистично оживите персонажей, написав,
+                          что они должны сказать
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg4.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--five"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">Заменя стиля изображений</h3>
+                        <p class="block-text">
+                          Стилизуйте изображения в художественные стили
+                          и направления
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg5.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--six"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">Перенос контента и эмоций</h3>
+                        <p class="block-text">
+                          Перенесите свой голос и мимику на любое изображение
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg6.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--seven"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Изменение фона в вашем видео
+                        </h3>
+                        <p class="block-text">
+                          Меняйте фон, стилистику и даже освещение в видео любой
+                          сложности
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg7.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--eight"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Изменение времени суток в видео
+                        </h3>
+                        <p class="block-text">
+                          Настройте время суток, погоду, насыщенность в вашем
+                          видео
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg8.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-possibilities-slide">
+                      <div class="b-possibilities-icon-bg G-center">
+                        <i class="icon icon-possibilities--nine"></i>
+                      </div>
+                      <div class="b-possibilities-slide-texts G-flex-column">
+                        <h3 class="block-title">
+                          Добавление освещения в видео
+                        </h3>
+                        <p class="block-text">
+                          Мгновенно меняйте вариации освещения в видео любой
+                          сложности
+                        </p>
+                      </div>
+                      <div class="b-possibilities-slide-img G-flex">
+                        <img
+                          src="assets/images/bPossibilitiesSlideImg9.webp"
+                          alt="photo"
+                          loading="lazy"
+                          decoding="async"
+                          width="245"
+                          height="152"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-possibilities-navigation G-align-center">
+                  <div
+                    class="b-possibilities-navigate-arrow b-possibilities-navigate-prev swiper-button-prev"
+                  >
+                    <i class="icon icon-arrowRight"></i>
+                  </div>
+                  <div
+                    class="b-possibilities-pagination swiper-pagination"
+                  ></div>
+                  <div
+                    class="b-possibilities-navigate-arrow b-possibilities-navigate-next swiper-button-next"
+                  >
+                    <i class="icon icon-arrowRight"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-trust-section">
+          <div class="container">
+            <div class="section-titles fade-top">
+              <h2>
+                Настройте рабочий
+                <span class="mobile-text-wrap">процесс под себя</span>
+              </h2>
+              <p>
+                <span class="mobile-text-wrap">
+                  Налаживайте процесс под свои задачи</span
+                >. Создавайте цепочки
+                <span class="desktop-text-wrap"
+                  >из разных моделей,
+                  <span class="mobile-text-wrap"
+                    >чтобы гибко управлять генерацией.</span
+                  ></span
+                >
+              </p>
+
+              <a class="btn-black b-trust-btn" href="#">
+                <div class="btn-black-icon G-center">
+                  <i class="icon icon-stars"></i>
+                </div>
+                <span>Узнать больше</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="b-trust-image fade-bottom G-flex">
+            <img
+              src="assets/images/bTrustImage.webp"
+              alt="photo"
+              loading="lazy"
+              decoding="async"
+              width="1440"
+              height="446"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </section>
+
+        <section class="b-news-section section">
+          <div class="container">
+            <div class="b-news-body">
+              <div class="section-titles fade-top">
+                <h2>Новости</h2>
+              </div>
+              <div class="b-news-items fade-bottom block-cnt">
+                <a href="#" class="b-news-item G-flex-column">
+                  <div class="b-news-item-image G-flex">
+                    <img
+                      src="assets/images/bNewsItemImage.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="386"
+                      height="240"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                  <div class="b-news-item-texts">
+                    <h3 class="block-title">Представляем Runway Aleph</h3>
+                    <p class="block-text">Исследования /26 июля 2025 года</p>
+                  </div>
+                </a>
+
+                <a href="#" class="b-news-item G-flex-column">
+                  <div class="b-news-item-image G-flex">
+                    <img
+                      src="assets/images/bNewsItemImage2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="386"
+                      height="240"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                  <div class="b-news-item-texts">
+                    <h3 class="block-title">
+                      Знакомство с будущим кинематографа на «Tribeca Festival»
+                      в 2024 году
+                    </h3>
+                    <p class="block-text">Новости /11 мая 2024 года</p>
+                  </div>
+                </a>
+
+                <a href="#" class="b-news-item G-flex-column">
+                  <div class="b-news-item-image G-flex">
+                    <img
+                      src="assets/images/bNewsItemImage3.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width="386"
+                      height="240"
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                  <div class="b-news-item-texts">
+                    <h3 class="block-title">Runway сотрудничает с Lionsgate</h3>
+                    <p class="block-text">Новости /19 сентября 2024 года</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="b-footer">
+        <div class="container">
+          <div class="footer-body G-column-center">
+            <a class="footer-logo G-flex" href="index.html" class="logo">
+              <img
+                src="assets/images/footerLogo.svg"
+                decoding="async"
+                loading="lazy"
+                alt="logo"
+                width="280"
+                height="56"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <p>© 2025 Runway AI, Inc.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

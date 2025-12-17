@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Recraft AI — сервис для создания уникального визуала с помощью искусственного интеллекта. Генерация изображений, векторов и дизайна по текстовому описанию за секунды."
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stable Diffusion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body {
+      background: #f9f9f9;
+    }
+  </style>
+  <body>
+    <div class="h-wrapper">
+      <header class="h-header fade-top">
+        <div class="container">
+          <div class="j-header-body G-align-center">
+            <a class="j-header-logo G-flex" href="index.html" class="logo">
+              <img
+                src="assets/images/JLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="119"
+                height="24"
+                style="width: 100%; height: auto"
+              />
+            </a>
+
+            <div class="header-actons G-align-center">
+              <a class="btn-login" href="#"> Вход </a>
+              <a class="btn-register" href="#"> Регистрация </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="j-hero-section">
+          <div class="j-hero-container">
+            <div class="j-hero-body">
+              <div class="j-hero-titles">
+                <div class="j-hero-title fade-top">
+                  <h1>
+                    Создание уникальных
+                    <span class="mobile-text-wrap"
+                      >изображений <span class="text-blue">Online</span></span
+                    >
+                  </h1>
+
+                  <img
+                    src="assets/images/jHeroLine.png"
+                    decoding="async"
+                    loading="eager"
+                    fetchpriority="high"
+                    alt="phto"
+                    width="240"
+                    height="24"
+                    style="width: 100%; height: auto"
+                  />
+                </div>
+
+                <p class="fade-bottom">
+                  Просто опишите свою идею текстом — ИИ мгновенно превратит
+                  её в фотореалистичное изображение, стильную иллюстрацию
+                  или креативную графику. Никаких сложных инструментов — только
+                  ваше воображение и мощь искусственного интеллекта.
+                </p>
+                <strong class="fade-bottom">Начните творить прямо сейчас.</strong>
+              </div>
+
+              <div class="j-hero-textarea-box fade-bottom">
+                <label class="j-hero-textarea-label">
+                  <textarea
+                    placeholder="Что вы хотите нарисовать?"
+                    name="text"
+                    autocomplete="off"
+                  ></textarea>
+                </label>
+
+                <div class="j-hero-textarea-tolls G-align-center">
+                  <div class="j-hero-file">
+                    <label class="j-hero-file-label">
+                      <i class="icon icon-jPlus"></i>
+                      <span>Референс</span>
+                      <input
+                        type="file"
+                        id="j-file-input"
+                        accept="image/*"
+                        hidden
+                      />
+                    </label>
+
+                    <div class="j-hero-file-rezult">
+                      <img
+                        src=""
+                        decoding="async"
+                        loading="lazy"
+                        alt="photo"
+                        width="40"
+                        height="40"
+                      />
+
+                      <i class="icon icon-jClose"></i>
+                    </div>
+                  </div>
+
+                  <p class="j-textarea-length G-align-center">
+                    <span class="j-start-count">0</span>
+                    /
+                    <span class="j-max-count">500</span>
+                  </p>
+
+                  <div class="j-hero-select j-hero-select-model">
+                    <div class="j-hero-select-header G-align-center">
+                      <p>Модель: Стандарт</p>
+                      <i class="icon icon-JArrowDown"></i>
+                    </div>
+                    <div class="j-select-sub-block j-model-sub-block">
+                      <ul>
+                        <li class="active">
+                          <span>Стандарт</span>
+                        </li>
+                        <li>
+                          <span>Улучшенная</span>
+                          <i class="icon icon-jLock"></i>
+                        </li>
+                        <li>
+                          <span>Про</span>
+                          <i class="icon icon-jLock"></i>
+                        </li>
+                        <li>
+                          <span>Ультра</span>
+                          <i class="icon icon-jLock"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="j-hero-select j-hero-select-style">
+                    <div
+                      class="j-hero-select-header j-style-select-header G-align-center"
+                    >
+                      <p>Стиль: Авто</p>
+                      <i class="icon icon-JArrowDown"></i>
+                    </div>
+
+                    <div class="j-select-sub-block j-style-sub-block">
+                      <p>Выбор стиля</p>
+                      <ul>
+                        <li class="active">
+                          <img
+                            src="assets/images/jStyleImg1.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>Авто</span>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/jStyleImg2.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>Фотореализм</span>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/jStyleImg3.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>Пиксель-арт</span>
+                        </li>
+                        <li>
+                          <img
+                            src="assets/images/jStyleImg4.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>Футуризм</span>
+                        </li>
+
+                        <li>
+                          <img
+                            src="assets/images/jStyleImg5.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>Киберпанк</span>
+                        </li>
+
+                        <li>
+                          <img
+                            src="assets/images/jStyleImg6.webp"
+                            decoding="async"
+                            loading="lazy"
+                            alt="photo"
+                            width="40"
+                            height="40"
+                          />
+                          <span>200+ стилей</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="j-hero-select j-hero-select-pictures">
+                    <div class="j-hero-select-header G-align-center">
+                      <p>1:1 · 2 <b>изображения</b></p>
+                      <i class="icon icon-JArrowDown"></i>
+                    </div>
+
+                    <div class="j-select-sub-block j-aspect-ratio-sub">
+                      <p class="j-aspect-ratio-sub-title">Соотношение сторон</p>
+                      <div class="j-aspect-ratio-items G-flex">
+                        <a href="#" class="j-aspect-ratio-item active">
+                          <div class="j-aspect-ratio-view j-ratio-view--one">
+                            <div></div>
+                          </div>
+                          <p>1:1</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--two">
+                            <div></div>
+                          </div>
+                          <p>16:9</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--tree">
+                            <div></div>
+                          </div>
+                          <p>9:16</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--for">
+                            <div></div>
+                          </div>
+                          <p>3:2</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--five">
+                            <div></div>
+                          </div>
+                          <p>2:3</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--six">
+                            <div></div>
+                          </div>
+                          <p>4:3</p>
+                        </a>
+
+                        <a href="#" class="j-aspect-ratio-item">
+                          <div class="j-aspect-ratio-view j-ratio-view--seven">
+                            <div></div>
+                          </div>
+                          <p>3:4</p>
+                        </a>
+                      </div>
+                      <div class="j-number-generations">
+                        <p class="j-aspect-ratio-sub-title">
+                          Количество генераций
+                        </p>
+
+                        <div class="j-number-generations-items">
+                          <a href="#" class="j-number-generation-item">
+                            <span>1</span>
+                          </a>
+                          <a href="#" class="j-number-generation-item active">
+                            <span>2</span>
+                          </a>
+                          <a href="#" class="j-number-generation-item">
+                            <span>4</span>
+                            <i class="icon icon-jLock"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn-black j-hero-btn G-align-center">
+                    <div class="btn-black-icon G-center">
+                      <i class="icon icon-stars"></i>
+                    </div>
+                    <span>Создать</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="j-examples-section">
+          <div class="container">
+            <div class="j-examples-body">
+              <h2 class="j-section-title fade-top">Примеры генераций</h2>
+            </div>
+
+            <div class="j-examples-media fade-bottom">
+              <picture class="j-examples-media-picture">
+                <source
+                  srcset="assets/images/jExamplesMediaMobiile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/jExamplesMedia.webp"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="2600"
+                />
+              </picture>
+
+              <div class="j-examples-blur G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/jExamplesBlurMobiile.png"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/jExamplesBlur.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width="1920"
+                    height="220"
+                  />
+                </picture>
+              </div>
+
+              <button class="btn-black j-examples-btn G-align-center">
+                <div class="btn-black-icon G-center">
+                  <i class="icon icon-jPlus"></i>
+                  <i class="icon icon-jMinus"></i>
+                </div>
+                <span>Показать больше</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="j-how-work-section">
+          <div class="container">
+            <div class="j-how-work-body">
+              <h3 class="j-section-title fade-top">
+                Воплотите идеи
+                <span class="mobile-text-wrap">в реальность</span>
+              </h3>
+              <p class="j-section-sub-title ">
+                <span class="mobile-text-wrap"
+                  >Генерируйте уникальные изображения,</span
+                >
+                создавайте дизайны
+                <span class="desktop-text-wrap">
+                  и визуализируйте
+                  <span class="mobile-text-wrap"
+                    >любые концепции с AI</span
+                  ></span
+                >
+              </p>
+
+              <div class="j-how-work-cnt j-block-cnt G-flex-column">
+                <div class="j-how-work-column G-align-center">
+                  <div class="j-work-texts fade-left">
+                    <div class="j-work-titles">
+                      <h3>Простота использования</h3>
+                      <p>
+                        Интуитивно понятный интерфейс для генерации уникальных
+                        изображений с помощью передовой нейросети
+                      </p>
+                    </div>
+
+                    <div class="j-work-tags G-flex-column">
+                      <div class="j-work-tag G-align-start">
+                        <div class="j-work-tag-icon G-flex">
+                          <img
+                            src="assets/images/jWorkTagIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="48"
+                            height="48"
+                          />
+                        </div>
+                        <div class="j-work-tag-texts">
+                          <h3 class="j-block-title">Высокое качество</h3>
+                          <p class="j-block-text">
+                            Генерация с разрешением до 4K, точная
+                            <span class="desktop-text-wrap"
+                              >детализация и реалистичная проработка</span
+                            >
+                            объектов. Алгоритмы сохраняют естественные текстуры,
+                            плавные переходы и чёткие контуры.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="j-work-tag G-align-start">
+                        <div class="j-work-tag-icon G-flex">
+                          <img
+                            src="assets/images/jWorkTagIcon2.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="48"
+                            height="48"
+                          />
+                        </div>
+                        <div class="j-work-tag-texts">
+                          <h3 class="j-block-title">Полный контроль</h3>
+                          <p class="j-block-text">
+                            Точная настройка параметров: схожесть
+                            <span class="desktop-text-wrap"
+                              >с исходником, детализация, стилизация.</span
+                            >
+                            Возможность редактировать сгенерированное
+                            изображение во встроенном редакторе.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="j-work-media fade-right G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/jWorkMedia1Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/jWorkMedia1.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="589"
+                        height="724"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="j-how-work-column G-align-center">
+                  <div class="j-work-media fade-left G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/jWorkMedia2Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/jWorkMedia2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width="589"
+                        height="724"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="j-work-texts fade-right">
+                    <div class="j-work-titles">
+                      <h3>Уникальность сервиса</h3>
+                      <p>
+                        Полный цикл работы в одном интерфейсе.
+                        <span class="desktop-text-wrap"
+                          >Технологии подстраиваются под вас</span
+                        >
+                      </p>
+                    </div>
+
+                    <div class="j-work-tags G-flex-column">
+                      <div class="j-work-tag G-align-start">
+                        <div class="j-work-tag-icon G-flex">
+                          <img
+                            src="assets/images/jWorkTagIcon3.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="48"
+                            height="48"
+                          />
+                        </div>
+                        <div class="j-work-tag-texts">
+                          <h3 class="j-block-title">Широкий выбор стилей</h3>
+                          <p class="j-block-text">
+                            Доступны десятки предустановленных стилей:
+                            от фотореализма и цифрового арта до аниме,
+                            <span class="desktop-text-wrap"
+                              >картин маслом, пиксель-арта и абстракции.</span
+                            >
+                            Комбинируйте стили для уникальных фото.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="j-work-tag G-align-start">
+                        <div class="j-work-tag-icon G-flex">
+                          <img
+                            src="assets/images/jWorkTagIcon4.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="48"
+                            height="48"
+                          />
+                        </div>
+                        <div class="j-work-tag-texts">
+                          <h3 class="j-block-title">Регулярные обновления</h3>
+                          <p class="j-block-text">
+                            Система постоянно улучшается: добавляются
+                            <span class="desktop-text-wrap">
+                              новые стили, повышается качество генерации,
+                            </span>
+                            исправляются артефакты. Вы всегда работаете
+                            с актуальной версией нейросети.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="j-trust-section">
+          <div class="container">
+            <div class="j-trust-body G-column-center">
+              <h4>
+                Создавайте будущее
+                <span class="text-wrap">визуала сегодня</span>
+              </h4>
+              <p>
+                <span class="mobile-text-wrap"
+                  >ИИ-генератор с фотореалистичным</span
+                >
+                качеством.
+                <span class="desktop-text-wrap"
+                  >Любой стиль, любая
+                  <span class="mobile-text-wrap">сложность</span></span
+                >
+              </p>
+              <a href="#" class="btn-white j-trust-btn G-align-center">
+                <div class="btn-white-icon G-center">
+                  <i class="icon icon-stars"></i>
+                </div>
+                <span>Попробовать бесплатно</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="j-faq-section">
+          <div class="container">
+            <div class="j-faq-body">
+              <h4 class="j-section-title">
+                Часто задаваемые <span class="mobile-text-wrap">вопросы</span>
+              </h4>
+              <p class="j-section-sub-title">
+                <span class="mobile-text-wrap">Мы заранее ответили на то,</span>
+                что интересует
+                <span class="desktop-text-wrap"
+                  >большинство
+                  <span class="mobile-text-wrap">пользователей</span></span
+                >
+              </p>
+
+              <div class="j-faq-cnt j-block-cnt G-flex">
+                <div class="j-faq-column G-flex-column">
+                  <div class="j-faq-item">
+                    <h4>Как работает сервис?</h4>
+                    <p>
+                      Вы формулируете задачу текстом или загружаете изображение.
+                      ИИ анализирует запрос, подбирает соответствующие алгоритмы
+                      и последовательно выполняет операции — создаёт новый
+                      контент, редактирует или улучшает его. Весь процесс
+                      происходит автоматически в едином интерфейсе.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Как получить доступ к сервису?</h4>
+                    <p>
+                      Для того чтобы начать использовать сервис, необходимо
+                      зарегистрироваться на нашем сайте, подтвердить свою
+                      электронную почту и выбрать подходящий тарифный план.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>
+                      Какие форматы
+                      <span class="text-wrap">поддерживаются?</span>
+                    </h4>
+                    <p>
+                      Сервис поддерживает различные форматы файлов, включая
+                      JPEG, PNG для изображений и TXT, DOCX для текстов,
+                      что позволяет гибко работать с контентом.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Есть ли ограничения по размеру загружаемых файлов?</h4>
+                    <p>
+                      Да, максимальный размер загружаемого файла составляет
+                      20 МБ. При необходимости можно разбивать большие файлы
+                      на несколько частей.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Как происходит оплата за услуги?</h4>
+                    <p>
+                      Оплата осуществляется через защищённые платёжные системы.
+                      Мы принимаем кредитные карты, PayPal и другие популярные
+                      методы оплаты для удобства клиентов.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="j-faq-column G-flex-column">
+                  <div class="j-faq-item">
+                    <h4>Каковы преимущества использования сервиса?</h4>
+                    <p>
+                      Сервис позволяет ускорить рабочие процессы, снизить
+                      затраты на создание контента и повысить качество конечного
+                      продукта благодаря применению современных технологий.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Как начать работать?</h4>
+                    <p>
+                      Для начала работы просто зарегистрируйтесь на сайте,
+                      создайте новый проект и загрузите необходимые материалы.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Что делать, если возникли проблемы?</h4>
+                    <p>
+                      Если у вас возникли трудности, вы можете обратиться
+                      в службу поддержки, где вам предоставят необходимую помощь
+                      и информацию.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Какова политика конфиденциальности?</h4>
+                    <p>
+                      Сервис гарантирует защиту личных данных пользователей
+                      и соблюдение всех норм и правил конфиденциальности.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Как работает поддержка пользователей?</h4>
+                    <p>
+                      Служба поддержки доступна через чат, электронную почту
+                      и телефон, обеспечивая быстрые ответы на запросы
+                      пользователей.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Как обеспечить безопасность данных?</h4>
+                    <p>
+                      Сервис применяет современные методы шифрования и защиты
+                      данных, чтобы гарантировать безопасность пользовательской
+                      информации.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="j-faq-column G-flex-column">
+                  <div class="j-faq-item">
+                    <h4>Какие изображения можно создавать?</h4>
+                    <p>
+                      Любые: от фотореалистичных пейзажей и портретов
+                      до абстрактного искусства, иллюстраций в стиле аниме,
+                      пиксель-арта и дизайнерских концептов.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Сколько времени занимает генерация одной картинки?</h4>
+                    <p>
+                      В среднем от 5 до 20 секунд, в зависимости от сложности
+                      запроса и выбранного стиля.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>
+                      Можно использовать созданные фото в коммерческих целях?
+                    </h4>
+                    <p>
+                      Да, вы становитесь полноправным автором и можете
+                      использовать результаты в личных и коммерческих проектах:
+                      для блогов, рекламы, дизайна товаров и т.д.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Что делать, если результат меня не устраивает?</h4>
+                    <p>
+                      Вы можете мгновенно перегенерировать изображение,
+                      скорректировать текстовый запрос или использовать
+                      встроенный редактор для доработки: изменить цвета,
+                      добавить элементы, улучшить детализацию.
+                    </p>
+                  </div>
+
+                  <div class="j-faq-item">
+                    <h4>Можно ли загрузить своё фото и его изменить?</h4>
+                    <p>
+                      Да, вы можете загрузить исходное изображение
+                      и использовать его как основу: изменить стиль, добавить
+                      или убрать объекты, улучшить качество, применить
+                      художественные фильтры.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="j-faq-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/faqBg2Mobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/faqBg2.webp"
+                alt="photo"
+                loading="lazy"
+                decoding="async"
+                width="589"
+                height="724"
+              />
+            </picture>
+          </div>
+        </section>
+      </main>
+
+      <footer class="j-footer">
+        <div class="container">
+          <div class="j-footer-body G-align-start">
+            <div class="j-footer-texts G-flex-column">
+              <a class="j-footer-logo G-flex" href="index.html" class="logo">
+                <picture>
+                  <source
+                    srcset="assets/images/JFooterLogoMobile.svg"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/JFooterLogo.svg"
+                    loading="lazy"
+                    alt="logo"
+                    width="209"
+                    height="56"
+                    style="width: 100%; height: auto"
+                  />
+                </picture>
+              </a>
+              <p class="desktop-block">© 2025 Stable Diffusion AI, Inc.</p>
+            </div>
+
+            <a href="#" class="btn-black j-footer-btn G-align-center">
+              <div class="btn-black-icon G-center">
+                <i class="icon icon-stars"></i>
+              </div>
+              <span>Попробовать бесплатно</span>
+            </a>
+
+            <p class="j-footer-mobile-text mobile-block">
+              © 2025 Stable Diffusion AI, Inc.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>
