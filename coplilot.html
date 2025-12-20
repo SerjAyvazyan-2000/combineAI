@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="COPILOT — мощный AI-ассистент для генерации изображений, поиска, программирования и глубокого анализа. Задайте вопрос и получите точный, быстрый и полезный ответ."
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>COPILOT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body {
+      background: #fbfbfb;
+    }
+  </style>
+  <body>
+    <div class="chat-wrapper G-flex">
+      <div class="mobile-menu-bg"></div>
+      <div class="chat-sidebar">
+        <div class="chat-sidebar-big">
+          <div class="chat-sidebar-header G-align-center">
+            <a class="chat-logo n-logo G-flex" href="#">
+              <img
+                src="assets/images/OLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="234"
+                height="20"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <button class="chat-sidebar-line">
+              <span></span>
+            </button>
+          </div>
+
+          <nav class="chat-menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="icon icon-chatNew"></i>
+                  <span>Новый чат</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="icon icon-chatSearch"></i>
+                  <span>Поиск по чатам</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="chat-projects-items">
+            <li class="chat-project-item active">
+              <a class="project-item-link G-align-center">
+                <span>Проекты</span>
+                <i class="icon icon-chatArrowDown"></i>
+              </a>
+
+              <ul class="project-sub-list">
+                <li>
+                  <a href="#">
+                    <i class="icon icon-folder"></i>
+                    <span>Новый чат</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="chat-cnt G-flex-column">
+            <ul class="chat-list">
+              <li class="chat-list-item active">
+                <a class="chat-item-link">
+                  <span>Чаты</span>
+                  <i class="icon icon-chatArrowDown"></i>
+                </a>
+
+                <ul class="o-chat-sub-list">
+                  <li>
+                    <span
+                      ><a href="#">Войдите</a>, чтобы сохранить свои
+                      разговоры</span
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <a href="#" class="chat-profile-link G-align-center">
+              <div class="chat-profile-avatar G-flex" href="#">
+                <img
+                  src="assets/images/avatar.svg"
+                  decoding="async"
+                  loading="eager"
+                  fetchpriority="high"
+                  alt="logo"
+                  width="234"
+                  height="20"
+                  style="width: 100%; height: auto"
+                />
+              </div>
+              <span>Гость</span>
+            </a>
+          </div>
+        </div>
+        <div class="chat-sidebar-small G-flex-column">
+          <div class="sidebar-small-tolls G-flex-column">
+            <div class="chat-sidebar-maximize G-center">
+              <i class="icon icon-maximize"></i>
+            </div>
+            <div class="chat-sidebar-new G-center">
+              <i class="icon icon-chatNew"></i>
+            </div>
+
+            <div class="chat-sidebar-search G-center">
+              <i class="icon icon-chatSearch"></i>
+            </div>
+
+            <a href="#" class="chat-small-profile G-center">
+              <i class="icon icon-arrowUp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-main-cnt">
+        <div class="chat-header-mobile G-align-center">
+          <i class="icon icon-chatBurger"></i>
+          <i class="icon icon-chatNew2"></i>
+        </div>
+
+        <div class="chat-cnt-wrapper">
+          <div class="o-chat-header animate-item G-align-center">
+            <h1>
+              Привет!
+              <span class="mobile-text-wrap">Чем займёмся сегодня?</span>
+            </h1>
+          </div>
+
+          <div
+            class="chat-search-wrapper o-chat-search animate-item G-align-center"
+          >
+            <label class="chat-file G-center">
+              <i class="icon icon-chatPlus"></i>
+              <input type="file" name="file" />
+            </label>
+
+            <label class="chat-file-search">
+              <input
+                autocomplete="off"
+                name="text"
+                type="text"
+                placeholder="Сообщение для Copilot"
+              />
+            </label>
+
+            <a class="chat-enter-link G-center" href="#">
+              <i class="icon icon-chatArrowLeft"></i>
+            </a>
+          </div>
+
+               <div class="o-chat-categories G-flex">
+            <button class="o-chat-category-item">
+              <span>Создай изображение</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Придумать решение</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Упростить тему</span>
+            </button>
+            <button class="o-chat-category-item">
+              <span>Нарисовать рассвет</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Рекомендовать продукт</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Написать черновик</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Улучшить текст</span>
+            </button>
+          </div>
+
+          
+        </div>
+
+        <div class="p-chat-mobile-tools">
+          <div class="o-chat-categories-mobile  G-flex">
+            <button class="o-chat-category-item">
+              <span>Создай изображение</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Придумать решение</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Упростить тему</span>
+            </button>
+            <button class="o-chat-category-item">
+              <span>Нарисовать рассвет</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Рекомендовать продукт</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Написать черновик</span>
+            </button>
+
+            <button class="o-chat-category-item">
+              <span>Улучшить текст</span>
+            </button>
+          </div>
+
+          <div class="chat-search-wrapper-mobile G-align-center">
+            <label class="chat-file G-center">
+              <i class="icon icon-chatPlus"></i>
+              <input type="file" name="file" />
+            </label>
+
+            <label class="chat-file-search">
+              <input
+                autocomplete="off"
+                name="text"
+                type="text"
+                placeholder="Сообщение для Copilot"
+              />
+            </label>
+
+            <a class="chat-enter-link G-center" href="#">
+              <i class="icon icon-chatArrowLeft"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

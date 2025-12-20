@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="NOTEBOOK — мощный AI-ассистент для генерации изображений, поиска, программирования и глубокого анализа. Задайте вопрос и получите точный, быстрый и полезный ответ."
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NOTEBOOK LM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body {
+      background: #ffffff;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header class="d-header fade-top">
+        <div class="small-container">
+          <div class="d-header-body G-align-center">
+            <a href="index.html" class="m-header-logo">
+              <picture>
+                <source
+                  srcset="assets/images/MlogoMobiile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/Mlogo.svg"
+                  decoding="async"
+                  loading="eager"
+                  fetchpriority="high"
+                  alt="logo"
+                  width="234"
+                  height="20"
+                  style="width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+            <a href="#" class="d-btn-register G-align-center">
+              <i class="icon icon-stash_arrow-up"></i>
+              <span
+                >Регистрация <span class="desktop-block">бесплатно</span></span
+              >
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="m-hero-section">
+          <div class="container">
+            <div class="m-hero-body">
+              <div class="m-hero-titles">
+                <h1 class="fade-top">
+                  Изучайте
+                  <span class="text-blue mobile-text-wrap">любую тему</span>
+                </h1>
+                <p class="fade-bottom">
+                  Редактируйте фотографии, используя
+                  <span class="mobile-text-wrap">больше настроек камеры и</span>
+                  освещения,
+                  <span class="desktop-text-wrap"
+                    >создавайте макеты,
+                    <span class="mobile-text-wrap"
+                      >объединяя несколько изображений,</span
+                    >
+                    <span class="mobile-text-wrap"
+                      >создавайте плакаты</span
+                    ></span
+                  >
+                  с четким текстом и легко создавайте
+                  <span class="mobile-text-wrap"
+                    >диаграммы с помощью Gemini</span
+                  >
+                </p>
+
+                <a href="#" class="btn-primary m-hero-btn G-align-center">
+                  <i class="icon icon-stash_arrow-up"></i>
+                  <span>Попробовать NotebookLM</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="m-possibilities-section">
+          <div class="small-container">
+            <div class="m-possibilities-body">
+              <h2 class="e-section-title fade-top">
+                Ваш ИИ-помощник
+                <span class="mobile-text-wrap">в исследованиях</span>
+              </h2>
+              <div class="m-possibilities-columns G-flex-column m-block-cnt">
+                <div class="m-possibilities-column G-align-center">
+                  <div class="m-possibilities-texts fade-left G-flex-column">
+                    <div
+                      class="m-possibilities-text-header desktop-block G-align-center"
+                    >
+                      <i class="icon icon-mAdd"></i>
+                      <h2 class="m-block-title">Добавляйте файлы</h2>
+                    </div>
+                    <p class="m-block-text">
+                      Загружайте PDF- и аудиофайлы, указывайте ссылки на сайты,
+                      видео YouTube, документы и презентации Google и другие
+                      источники. NotebookLM будет обобщать всю информацию и
+                      проводить интересные связи между темами с помощью
+                      последней версии мультимодальной ИИ-модели Gemini.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="big-btn-black m-possibilities-btn G-align-center"
+                    >
+                      <i class="icon icon-stash_arrow-up"></i>
+                      Попробовать
+                    </a>
+                  </div>
+                  <div class="m-possibilities-media fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/mPossibilitiesMedia1Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/mPossibilitiesMedia.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="700"
+                        height="387"
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="m-possibilities-text-header mobile-block G-align-center"
+                  >
+                    <i class="icon icon-mAdd"></i>
+                    <h2 class="m-block-title">Добавляйте файлы</h2>
+                  </div>
+                </div>
+
+                <div class="m-possibilities-column G-align-center">
+                  <div class="m-possibilities-texts fade-left G-flex-column">
+                    <div
+                      class="m-possibilities-text-header desktop-block G-align-center"
+                    >
+                      <i class="icon icon-outline"></i>
+                      <h2 class="m-block-title">Смотрите источники</h2>
+                    </div>
+                    <p class="m-block-text">
+                      Вы можете быть уверенными в достоверности всех ответов,
+                      поскольку NotebookLM подкрепляет их точными цитатами из
+                      ваших источников.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="big-btn-black m-possibilities-btn G-align-center"
+                    >
+                      <i class="icon icon-stash_arrow-up"></i>
+                      Попробовать
+                    </a>
+                  </div>
+                  <div class="m-possibilities-media fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/mPossibilitiesMedia2Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/mPossibilitiesMedia2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="700"
+                        height="387"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="m-possibilities-text-header mobile-block  G-align-center">
+                    <i class="icon icon-outline"></i>
+                    <h2 class="m-block-title">Смотрите источники</h2>
+                  </div>
+                </div>
+
+                <div class="m-possibilities-column G-align-center">
+                  <div class="m-possibilities-texts fade-left G-flex-column">
+                    <div
+                      class="m-possibilities-text-header desktop-block G-align-center"
+                    >
+                      <i class="icon icon-lightning"></i>
+                      <h2 class="m-block-title">Мгновенные подсказки</h2>
+                    </div>
+                    <p class="m-block-text">
+                      Работая со всеми загруженными источниками, NotebookLM
+                      станет вашим личным ИИ-экспертом по самым важным темам.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="big-btn-black m-possibilities-btn G-align-center"
+                    >
+                      <i class="icon icon-stash_arrow-up"></i>
+                      Попробовать
+                    </a>
+                  </div>
+                  <div class="m-possibilities-media fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/mPossibilitiesMedia3Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/mPossibilitiesMedia3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="700"
+                        height="387"
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="m-possibilities-text-header mobile-block G-align-center"
+                  >
+                    <i class="icon icon-lightning"></i>
+                    <h2 class="m-block-title">Мгновенные подсказки</h2>
+                  </div>
+                </div>
+
+                <div class="m-possibilities-column G-align-center">
+                  <div class="m-possibilities-texts fade-left G-flex-column">
+                    <div
+                      class="m-possibilities-text-header desktop-block G-align-center"
+                    >
+                      <i class="icon icon-mAdd"></i>
+                      <h2 class="m-block-title">Обучайтесь на ходу</h2>
+                    </div>
+                    <p class="m-block-text">
+                      Всего одно нажатие – и новая функция аудиопересказа
+                      превратит ваши источники в захватывающие углубленные
+                      обсуждения по теме.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="big-btn-black m-possibilities-btn G-align-center"
+                    >
+                      <i class="icon icon-stash_arrow-up"></i>
+                      Попробовать
+                    </a>
+                  </div>
+                  <div class="m-possibilities-media fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/mPossibilitiesMedia4Mobiile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/mPossibilitiesMedia4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="700"
+                        height="387"
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="m-possibilities-text-header mobile-block G-align-center"
+                  >
+                    <i class="icon icon-mAdd"></i>
+                    <h2 class="m-block-title">Обучайтесь на ходу</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="m-how-work-section">
+          <div class="small-container">
+            <div class="m-how-work-body">
+              <h3 class="e-section-title fade-top">
+                <span class="mobile-text-wrap">Как использовать</span>
+                <span class="text-blue">NotebookLM</span>
+                <span class="desktop-text-wrap"
+                  >максимально
+                  <span class="mobile-text-wrap">эффективно</span></span
+                >
+              </h3>
+              <div class="m-work-items m-block-cnt">
+                <div class="m-work-item animate-item G-flex-column">
+                  <i class="icon icon-school"></i>
+                  <h3 class="m-block-title">Упростите учебу</h3>
+                  <p class="m-block-text">
+                    Загрузите записи лекций, главы из учебников и научные
+                    статьи. Попросите NotebookLM объяснить сложные концепции
+                    простым языком и привести реальные примеры, чтобы вы смогли
+                    лучше разобраться в теме.
+                  </p>
+                  <span>Изучайте темы быстрее.</span>
+                </div>
+
+                <div class="m-work-item animate-item G-flex-column">
+                  <i class="icon icon-ultimate"></i>
+                  <h3 class="m-block-title">Организуйте мысли</h3>
+                  <p class="m-block-text">
+                    Загрузите исходные материалы и попросите NotebookLM создать
+                    план блестящей презентации, включающий основные тезисы для
+                    выступления и аргументацию.
+                  </p>
+                  <span>Выступайте уверенно.</span>
+                </div>
+
+                <div class="m-work-item animate-item G-flex-column">
+                  <i class="icon icon-idea"></i>
+                  <h3 class="m-block-title">Гененируйте идеи</h3>
+                  <p class="m-block-text">
+                    Загрузите заметки с мозгового штурма, исследование рынка и
+                    анализ конкурентов. Попросите NotebookLM выявить тенденции,
+                    выработать идеи новых продуктов и найти скрытые возможности.
+                  </p>
+                  <span>Раскройте свой творческий потенциал.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="m-reviews-section">
+          <div class="m-reviews-container">
+            <div class="m-reviews-body">
+              <h3 class="e-section-title fade-top">
+                Последние отзывы <span class="mobile-text-wrap">о сервисе</span>
+              </h3>
+              <div class="m-reviews-columns fade-bottom m-block-cnt">
+                <div class="m-reviews-track">
+                  <div class="m-reviews-slide">
+                    <p>
+                      NotebookLM прям спас меня, когда готовила курсик по
+                      маркетингу. Закинула туда пачку статей и свои заметки —
+                      нейросеть сама собрала конспект, подсветила противоречия и
+                      даже предложила нормальный порядок тем. Иногда лупит
+                      слишком общими фразами, но в целом реально экономит время.
+                    </p>
+                    <span>12.09.2025</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Использую для учёбы: загружаю главы учебника, прошу
+                      объяснить человеческим языком — и всё, материал
+                      усваивается в разы легче. Особенно круто, что можно
+                      задавать вопросы «как бы на основе моих документов».
+                      Единственный минус — иногда долго думает на больших
+                      файлах.
+                    </p>
+                    <span>09.11.2025</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Наконец-то инструмент, который реально читает мои
+                      документы, а не притворяется 😅 Я заливала огромный PDF с
+                      лекциями — он аккуратно вытащил ключевые моменты и ответил
+                      на мои вопросы без лишней воды. Порой повторяется, но это
+                      терпимо.
+                    </p>
+                    <span>03.12.2025</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Сначала была скептически настроена, но после использования
+                      NotebookLM поняла, насколько это удобно. Загрузила
+                      собственные исследования и заметки — и он помог
+                      структурировать данные, выделить важные аспекты и даже
+                      предложил дополнительные источники. Бывает, что не всегда
+                      понимает контекст, но в целом полезен.
+                    </p>
+                    <span>15.01.2026</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Уже не раз использовала NotebookLM для подготовки к
+                      экзаменам. Это как личный помощник, который собирает
+                      информацию из разных источников и помогает с подготовкой.
+                      Классно, что можно сразу видеть, где есть пробелы в
+                      знаниях. Иногда выдаёт смешанные результаты, но это не
+                      критично.
+                    </p>
+                    <span>22.02.2026</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Не ожидала, что такой инструмент будет так полезен в
+                      написании научной работы. Загрузила черновики и ссылки на
+                      исследования — он помог организовать мысли и предложил
+                      несколько новых идей для аргументации. Иногда выдает
+                      немного поверхностные рекомендации, но в целом я довольна.
+                    </p>
+                    <span>10.03.2026</span>
+                  </div>
+                  <div class="m-reviews-slide">
+                    <p>
+                      Использую для учёбы: загружаю главы учебника, прошу
+                      объяснить человеческим языком — и всё, материал
+                      усваивается в разы легче. Особенно круто, что можно
+                      задавать вопросы «как бы на основе моих документов».
+                      Единственный минус — иногда долго думает на больших
+                      файлах.
+                    </p>
+                    <span>09.11.2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn-primary m-reviews-btn G-align-center">
+                <i class="icon icon-stash_arrow-up"></i>
+                Убедиться самому
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="m-footer">
+        <div class="container">
+          <div class="m-footer-body G-align-center">
+            <a href="#" class="m-footer-logo G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/MFooterLogoMobiile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/MFooterLogo.svg"
+                  alt="logo"
+                  loading="lazy"
+                  width="285"
+                  height="48"
+                  style="width: 100%; height: 100%"
+                />
+              </picture>
+            </a>
+            <p>Google Inс. © 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

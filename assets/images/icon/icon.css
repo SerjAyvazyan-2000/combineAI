@@ -224,3 +224,94 @@
           mask-image: url(lDocument3.svg);
   -webkit-mask-image: url(lDocument3.svg);
 }
+
+.icon-mAdd{
+    mask-image: url(mAdd.svg);
+  -webkit-mask-image: url(mAdd.svg);
+}
+.icon-outline{
+      mask-image: url(outline.svg);
+  -webkit-mask-image: url(outline.svg);
+}
+.icon-lightning{
+        mask-image: url(lightning.svg);
+  -webkit-mask-image: url(lightning.svg);
+}
+.icon-school{
+        mask-image: url(school.svg);
+  -webkit-mask-image: url(school.svg);
+}
+.icon-ultimate{
+        mask-image: url(ultimate.svg);
+  -webkit-mask-image: url(ultimate.svg);
+}
+.icon-idea{
+        mask-image: url(idea.svg);
+  -webkit-mask-image: url(idea.svg);
+}
+
+.icon-chatNew {
+  mask-image: url(chatNew.svg);
+  -webkit-mask-image: url(chatNew.svg);
+}
+.icon-chatSearch{
+    mask-image: url(chatSearch.svg);
+  -webkit-mask-image: url(chatSearch.svg);
+}
+.icon-chatArrowDown{
+      mask-image: url(chatArrowDown.svg);
+  -webkit-mask-image: url(chatArrowDown.svg);
+}
+
+.icon-folder{
+      mask-image: url(folder.svg);
+  -webkit-mask-image: url(folder.svg);
+}
+.icon-maximize{
+      mask-image: url(maximize.svg);
+  -webkit-mask-image: url(maximize.svg);
+}
+
+.icon-arrowUp{
+      mask-image: url(ChatarrowUp.svg);
+  -webkit-mask-image: url(ChatarrowUp.svg);
+}
+.icon-chatArrowLeft{
+      mask-image: url(chatArrowLeft.svg);
+  -webkit-mask-image: url(chatArrowLeft.svg);
+}
+.icon-chatPlus{
+        mask-image: url(chatPlus.svg);
+  -webkit-mask-image: url(chatPlus.svg);
+}
+.icon-chatBurger{
+        mask-image: url(chatBurger.svg);
+  -webkit-mask-image: url(chatBurger.svg);
+}
+.icon-chatNew2{
+        mask-image: url(chatNew2.svg);
+  -webkit-mask-image: url(chatNew2.svg);
+}
+
+
+
+.icon-Psport{
+         mask-image: url(Psport.svg);
+  -webkit-mask-image: url(Psport.svg);
+}
+.icon-PCheck{
+          mask-image: url(PCheck.svg);
+  -webkit-mask-image: url(PCheck.svg);
+}
+.icon-Pplan{
+      mask-image: url(Pplan.svg);
+  -webkit-mask-image: url(Pplan.svg);
+}
+.icon-Pfinance{
+       mask-image: url(Pfinance.svg);
+  -webkit-mask-image: url(Pfinance.svg);
+}
+.icon-PArrowLeft{
+         mask-image: url(PArrowLeft.svg);
+  -webkit-mask-image: url(PArrowLeft.svg);
+}
