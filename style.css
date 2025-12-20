@@ -991,6 +991,12 @@ header {
 
 /* ===============================Стили для лэндинга Runway START============================== */
 
+.b-header-body{
+      background: #202020;
+    border-radius: 8px;
+    padding: 12px 12px 12px 20px;
+    justify-content: space-between;
+}
 .b-hero-section {
   position: relative;
   z-index: 2;
@@ -9808,6 +9814,12 @@ header {
   }
 
   /* ===============================Стили для лэндинга Runway START============================== */
+
+  .b-header-body {
+        border-radius: 6px;
+        padding: 8px 8px 8px 14px;
+    }
+
 
   .b-hero-titles {
     padding: 0 14px;
