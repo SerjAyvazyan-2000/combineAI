@@ -3631,7 +3631,58 @@ header {
 .j-examples-section {
   margin-top: 160px;
 }
-.j-examples-media {
+
+.j-examples-media-wrapper{
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+.j-examples-media-columns{
+  display: flex;
+  gap: 20px;
+    position: relative;
+    overflow: hidden;
+        max-height: 644px;
+    transition: .3s;
+
+}
+
+.j-examples-media-column{
+  max-width: 285px;
+  width: 100%;
+
+
+
+}
+
+.j-examples-media-wrapper.active .j-examples-media-columns {
+    max-height: 2000px;
+
+}
+
+.j-examples-media-track {
+  will-change: transform;
+}
+
+
+
+.j-examples-media-track{
+  width: 100%;
+  gap: 20px;
+}
+
+.j-examples-media-item{
+  max-width: 285px;
+  width: 100%;
+}
+.j-examples-media-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* .j-examples-media {
   margin-top: 40px;
   max-height: 634px;
   overflow: hidden;
@@ -3642,9 +3693,10 @@ header {
   max-height: max-content;
   overflow: unset;
 }
-.j-examples-media.active .j-examples-blur {
-  display: none;
-}
+   */
+
+
+
 .j-examples-blur {
   position: absolute;
   bottom: 0;
@@ -3660,16 +3712,8 @@ header {
   width: 100%;
   height: 100%;
 }
-.j-examples-media-picture {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.j-examples-media-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
+
 .j-examples-btn {
   position: absolute;
   bottom: 40px;
@@ -3687,18 +3731,20 @@ header {
 .j-examples-btn i {
   font-size: 14px;
 }
-.j-examples-media .j-examples-btn .icon-jMinus {
+
+.j-examples-media-wrapper .j-examples-btn .icon-jMinus {
   display: none;
 }
-.j-examples-media.active .j-examples-btn .icon-jMinus {
+.j-examples-media-wrapper.active .j-examples-btn .icon-jMinus {
   display: block;
 }
-.j-examples-media.active .j-examples-btn .icon-jPlus {
+.j-examples-media-wrapper.active .j-examples-btn .icon-jPlus {
   display: none;
 }
-.j-examples-media.active .j-examples-btn {
-  position: relative;
+
+.j-examples-media-wrapper.active .j-examples-btn {
   bottom: 0;
+  position: relative;
   margin-top: 32px;
 }
 
@@ -9529,6 +9575,17 @@ header {
   .j-examples-btn {
     bottom: 32px;
   }
+  .j-examples-media-columns{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .j-examples-media-column {
+    width: 100%;
+    flex: 1 1 40%;
+}
+.j-examples-media-columns{
+  max-height: 600px;
+}
 
   .j-faq-item {
     max-width: 100%;

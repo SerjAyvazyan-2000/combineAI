@@ -582,9 +582,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.querySelector(".j-examples-media") &&
+document.querySelector(".j-examples-media-wrapper") &&
   document.addEventListener("DOMContentLoaded", () => {
-    const media = document.querySelector(".j-examples-media");
+    const media = document.querySelector(".j-examples-media-wrapper");
     const btn = media.querySelector(".j-examples-btn");
     const text = btn.querySelector("span");
 
@@ -605,6 +605,35 @@ document.querySelector(".j-examples-media") &&
       }
     });
   });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const columns = document.querySelectorAll(".j-examples-media-column");
+
+  columns.forEach((column, index) => {
+    const track = column.querySelector(".j-examples-media-track");
+    const items = Array.from(track.children);
+
+    items.forEach(item => {
+      track.appendChild(item.cloneNode(true));
+    });
+
+    const isDown = index === 1 || index === 3;
+    const direction = isDown ? 1 : -1;
+
+    gsap.to(track, {
+      yPercent: direction * 50,
+      duration: 70,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        yPercent: gsap.utils.wrap(-50, 0)
+      }
+    });
+  });
+});
+
+
 
 $(function () {
   let Accordion = function (el, multiple) {
@@ -1131,3 +1160,4 @@ document.addEventListener("DOMContentLoaded", () => {
     mediaQuery: "(max-width: 767px)",
   });
 });
+
