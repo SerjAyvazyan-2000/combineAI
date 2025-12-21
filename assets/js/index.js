@@ -623,7 +623,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.to(track, {
       yPercent: direction * 50,
-      duration: 70,
+      duration: 90,
       ease: "none",
       repeat: -1,
       modifiers: {

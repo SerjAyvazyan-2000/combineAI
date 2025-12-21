@@ -8710,6 +8710,30 @@ header {
     justify-content: center;
     max-width: max-content;
   }
+
+
+   .j-examples-media-columns{
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .j-examples-media-column {
+    width: 100%;
+    flex: 1 1 40%;
+    max-width: 100%;
+}
+.j-examples-media-columns{
+  max-height: 600px;
+}
+.j-examples-media-column:nth-child(3){
+  display: none;
+}
+
+.j-examples-media-column:nth-child(4){
+    display: none;
+
+}
+
+
 }
 @supports (-webkit-overflow-scrolling: touch) {
   .splide__pagination {
@@ -8861,9 +8885,7 @@ header {
   .m-possibilities-columns {
     margin-top: 38px;
   }
-  .mobile-block {
-    display: flex;
-  }
+
   .m-block-title {
     font-size: 18px;
     line-height: 22px;
@@ -9575,18 +9597,7 @@ header {
   .j-examples-btn {
     bottom: 32px;
   }
-  .j-examples-media-columns{
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .j-examples-media-column {
-    width: 100%;
-    flex: 1 1 40%;
-}
-.j-examples-media-columns{
-  max-height: 600px;
-}
-
+ 
   .j-faq-item {
     max-width: 100%;
   }
