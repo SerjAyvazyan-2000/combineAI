@@ -315,3 +315,17 @@
          mask-image: url(PArrowLeft.svg);
   -webkit-mask-image: url(PArrowLeft.svg);
 }
+
+.demonstration-icon1{
+  mask-image: url(demonstrationIcon1.svg);
+  -webkit-mask-image: url(demonstrationIcon1.svg);
+}
+.demonstration-icon2{
+  mask-image: url(demonstrationIcon2.svg);
+  -webkit-mask-image: url(demonstrationIcon2.svg);
+}
+
+.demonstration-icon3{
+  mask-image: url(demonstrationIcon3.svg);
+  -webkit-mask-image: url(demonstrationIcon3.svg);
+}
