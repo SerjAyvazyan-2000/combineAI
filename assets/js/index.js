@@ -128,6 +128,9 @@ document.addEventListener("DOMContentLoaded", () => {
       ".b-instrument-item-categories button"
     );
     const valImages = instrument.querySelectorAll(".b-instrument-img-item");
+    const valSmallImages = instrument.querySelectorAll(".b-tag-small-img");
+    const valBigmages = instrument.querySelectorAll(".b-tag-big-img");
+
 
     function setActiveVal(val) {
       valButtons.forEach((btn) => btn.classList.remove("active"));
@@ -138,6 +141,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (activeBtn) activeBtn.classList.add("active");
 
       valImages.forEach((img) => {
+        img.style.display = img.dataset.val === val ? "flex" : "none";
+      });
+      
+      valSmallImages.forEach((img) => {
+        img.style.display = img.dataset.val === val ? "flex" : "none";
+      });
+           valBigmages.forEach((img) => {
         img.style.display = img.dataset.val === val ? "flex" : "none";
       });
     }
@@ -152,6 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveVal("1");
   });
 });
+
+
+
+
 
 if (typeof window.jQuery !== "undefined") {
   jQuery.event.special.touchstart = {

@@ -1148,6 +1148,8 @@ header {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #f1f1f1;
+    -webkit-appearance: none;
+  appearance: none;
 }
 .b-instrument-item-categories button:hover {
   background: #f1f1f1;
@@ -1247,15 +1249,17 @@ header {
   position: relative;
   z-index: 2;
 }
-.b-instrument-tag--one-img img:nth-child(2) {
-  background-color: red;
-  position: absolute;
+
+
+.b-tag-small-img{
+    position: absolute;
   top: 44px;
   left: 44px;
   display: flex;
   max-width: 48px;
   width: 100%;
 }
+
 .b-instruments-tag--two-categories p {
   font-weight: 600;
   font-size: 16px;
@@ -1432,7 +1436,16 @@ header {
 .b-trust-btn {
   margin: 32px auto 0;
   max-width: max-content;
+    border: 1px solid transparent
+
 }
+.b-trust-btn:hover {
+  border: 1px solid #202020;
+  
+}
+
+
+
 .b-trust-section {
   padding: 90px 10px;
 }
@@ -9930,6 +9943,10 @@ header {
   }
   .b-instruments-categories button {
     white-space: nowrap;
+    font-size: 15px;
+    line-height: 130%;
+      padding: 8px 12px;
+       border-radius: 4px;
   }
   .b-instrument-texts-item {
     padding: 0;
