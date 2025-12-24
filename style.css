@@ -147,6 +147,8 @@ a {
 button {
   cursor: pointer;
   position: relative;
+      -webkit-appearance: none;
+  appearance: none;
 }
 input,
 button,
@@ -1103,6 +1105,8 @@ header {
   transition: 0.3s;
   background: transparent;
   opacity: 0.7;
+  color: #202020;
+
 }
 .b-instruments-categories button:hover {
   background: #f1f1f1;
@@ -1148,8 +1152,7 @@ header {
   transition: 0.3s;
   background: transparent;
   border: 1px solid #f1f1f1;
-    -webkit-appearance: none;
-  appearance: none;
+  color: #202020;
 }
 .b-instrument-item-categories button:hover {
   background: #f1f1f1;
