@@ -329,3 +329,34 @@
   mask-image: url(demonstrationIcon3.svg);
   -webkit-mask-image: url(demonstrationIcon3.svg);
 }
+
+
+
+.icon-rarrowUP{
+    mask-image: url(RarrowUP.svg);
+  -webkit-mask-image: url(RarrowUP.svg);
+}
+
+.icon-rArrowSwiper{
+      mask-image: url(rArrowSwiper.svg);
+  -webkit-mask-image: url(rArrowSwiper.svg);
+}
+
+.icon-userPlus{
+      mask-image: url(userPlus.svg);
+  -webkit-mask-image: url(userPlus.svg);
+}
+
+
+.icon-UarrowLeft{
+      mask-image: url(UarrowLeft.svg);
+  -webkit-mask-image: url(UarrowLeft.svg);
+}
+.icon-TArrowLeft{
+      mask-image: url(TArrowLeft.svg);
+  -webkit-mask-image: url(TArrowLeft.svg);
+}
+.icon-VStars{
+      mask-image: url(VStars.svg);
+  -webkit-mask-image: url(VStars.svg);
+}

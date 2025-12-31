@@ -421,3 +421,266 @@ window.addEventListener("load", initWordsSplide);
 
 
 
+
+const RWorkSwiper = new Swiper(".r-models-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  loop:true,
+
+  navigation: {
+    nextEl: ".r-models-next",
+    prevEl: ".r-models-prev",
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1, spaceBetween: 10 },
+    500: { slidesPerView: 1.5 , spaceBetween: 10},
+    626: { slidesPerView: 2.6 },
+     700: { slidesPerView: 3 },
+    830: { slidesPerView: 3.2 },
+    1000: { slidesPerView: 3.7 },
+    1200: { slidesPerView: 4 },
+  },
+});
+
+
+const RGalarySwiper = new Swiper(".r-galary-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop:true,
+  autoHeight:true,
+
+  navigation: {
+    nextEl: ".r-galary-next",
+    prevEl: ".r-galary-prev",
+  },
+
+
+});
+
+
+
+
+
+
+const abilitiesTabsSwiper = new Swiper(".r-abilities-tab-swiper", {
+  slidesPerView: 3.2,
+  spaceBetween: 10,
+  centeredSlides: true,
+  initialSlide: 0,
+
+  breakpoints: {
+    320: { slidesPerView: 2 },
+    370: { slidesPerView: 2.4 },
+    576: { slidesPerView: 2.2 },
+    600: { slidesPerView: 2.2 },
+    700: { slidesPerView: 2.6 },
+    830: { slidesPerView: 3.2 },
+  },
+});
+
+const tabButtons = document.querySelectorAll(".r-abilities-tab-btn");
+const abilityItems = document.querySelectorAll(".r-abilities-item");
+
+function activateAbility(id) {
+  tabButtons.forEach((btn, index) => {
+    const isActive = btn.dataset.id === id;
+    btn.classList.toggle("active", isActive);
+
+    if (isActive) {
+      abilitiesTabsSwiper.slideTo(index, 400);
+    }
+  });
+
+  abilityItems.forEach(item => {
+    item.classList.toggle("active", item.dataset.id === id);
+  });
+}
+
+tabButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    activateAbility(btn.dataset.id);
+  });
+});
+
+activateAbility("2");
+
+
+
+const UpossibilitiesSwiper = new Swiper(".u-possibilities-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  pagination: {
+    el: ".u-possibilities-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 60,
+    },
+
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 136,
+    },
+  },
+});
+
+const UAddSoundSwiper = new Swiper(".u-add-sound-swiper", {
+  slidesPerView: 3.9,
+  spaceBetween: 136,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+
+  breakpoints: {
+       320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+    },
+    450: {
+      slidesPerView: 1.7,
+      spaceBetween: 20,
+    },
+
+    600: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+    1270: {
+      slidesPerView: 3.9,
+      spaceBetween: 136,
+    },
+  },
+});
+
+
+const Sswiper = new Swiper('.s-creators-swiper', {
+  initialSlide: 3, 
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  loop: true,
+  speed: 600,
+  pagination: false,
+  navigation: false,
+  slideToClickedSlide: true,
+  breakpoints: {
+    1221: {
+      spaceBetween: 30,
+      autoplay: {
+        enabled: false,
+      },
+      allowTouchMove: false,
+      simulateTouch: false,
+    },
+  },
+});
+
+const Sswiper2 = new Swiper('.s-updates-swiper', {
+  initialSlide: 3, 
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  loop: true,
+  speed: 800,
+  pagination: false,
+  navigation: false,
+  breakpoints: {
+    1025: {
+      spaceBetween: 30,
+      autoplay: {
+        enabled: false,
+      },
+      allowTouchMove: false,
+      simulateTouch: false,
+    },
+  },
+});
+
+
+const vToolsSwiper = new Swiper(".v-tools-swiper", {
+  slidesPerView: 5,
+  spaceBetween: 8,
+
+  breakpoints: {
+       320: {
+      slidesPerView: 1.7,
+    },
+
+        450: {
+      slidesPerView: 1.8,
+    },
+
+    576: {
+      slidesPerView: 2.5,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+
+    992: {
+      slidesPerView: 4,
+    },
+
+    1200: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4,
+    },
+
+    1400: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+const vHeroSwiper = new Swiper(".v-hero-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 15,
+   slideToClickedSlide: true, 
+
+  breakpoints: {
+      320: {
+      slidesPerView: 1.1,
+             spaceBetween: 0,
+
+    },
+
+        450: {
+      slidesPerView: 1.5,
+       spaceBetween: 0,
+    },
+
+    576: {
+      slidesPerView: 2,
+      
+    },
+
+    992: {
+      slidesPerView: 2,
+    },
+
+    1200: {
+      slidesPerView: 3,
+    },
+
+    1300: {
+      slidesPerView: 3,
+    },
+
+    1400: {
+      slidesPerView: 3,
+    },
+  },
+});

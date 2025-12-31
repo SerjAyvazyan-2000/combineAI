@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="SORA — мощный AI-ассистент для генерации изображений, поиска, программирования и глубокого анализа. Задайте вопрос и получите точный, быстрый и полезный ответ."
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SORA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        background: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="d-header fade-top">
+        <div class="container">
+          <div class="u-header-body G-align-center">
+            <a href="index.html" class="t-header-logo G-flex">
+              <img
+                src="assets/images/Ulogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="143"
+                height="33"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <a href="#" class="u-btn-register G-align-center">
+              <i class="icon icon-stash_arrow-up"></i>
+              <span
+                >Регистрация <span class="desktop-block">бесплатно</span></span
+              >
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="u-hero-section">
+          <div class="container">
+            <div class="u-hero-body G-column-center">
+              <a class="u-hero-logo G-flex fade-top" href="#">
+                <img
+                  src="assets/images/soraLogo.svg"
+                  decoding="async"
+                  loading="eager"
+                  fetchpriority="high"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </a>
+              <div class="u-hero-titles fade-bottom G-column-center">
+                <h1>Новый сайт Sora</h1>
+                <p>
+                  Превращайте свои идеи в видео с <span class="mobile-text-wrap">гиперреалистичным движением и
+                  звуком</span>
+                </p>
+                <p>Уже доступно</p>
+              </div>
+
+              <a class="u-primary-btn u-hero-btn G-align-center" href="#">
+                <i class="icon icon-stash_arrow-up"></i>
+
+                <span>Попробовать бесплатно</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="u-hero-bg">
+            <picture>
+              <source
+                srcset="assets/images/uHerBgMobiile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/uHerBg.webp"
+                alt="photo"
+                loading="lazy"
+                width="549"
+                height="367"
+              />
+            </picture>
+          </div>
+
+        </section>
+
+        <section class="u-possibilities-section">
+          <div class="container">
+            <div class="u-possibilities-columns G-flex-column">
+              <div class="u-possibilities-column G-align-center">
+                <div class="u-possibilities-texts animate-item">
+                  <h2 class="u-block-title">От слов к целым мирам</h2>
+                  <p class="u-block-text">
+                    Начните с текстового запроса или загрузите изображение —
+                    создавайте видео с беспрецедентным уровнем реализма в любом
+                    стиле: кинематографичном, анимированном, фотореалистичном
+                    или сюрреалистичном
+                  </p>
+                </div>
+                <div class="u-possibilities-big-media animate-item">
+                  <picture>
+                    <source
+                      srcset="assets/images/uPMedia1Mobiile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/uPMedia1.webp"
+                      decoding="async"
+                      loading="lazy"
+                      alt="photo"
+                      width="669"
+                      height="640"
+                    />
+                  </picture>
+
+                  <a href="#" class="u-possibilities-link G-align-center">
+                    <span>Создай кинематографичную сцену</span>
+                    <div class="u-possibilities-link-icon G-center">
+                      <i class="icon icon-UarrowLeft"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="u-possibilities-column G-align-center">
+                <div class="u-possibilities-small-media animate-item">
+                  <picture>
+                    <source
+                      srcset="assets/images/uPMedia1Mobiile2.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/uPMedia2.webp"
+                      decoding="async"
+                      loading="lazy"
+                      alt="photo"
+                      width="669"
+                      height="640"
+                    />
+                  </picture>
+
+                  <a href="#" class="u-possibilities-link G-align-center">
+                    <span
+                      >@minnia и @thomas в
+                      <span class="text-wrap"
+                        >ретрофутуристическом мире|</span
+                      ></span
+                    >
+                    <div class="u-possibilities-link-icon G-center">
+                      <i class="icon icon-UarrowLeft"></i>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="u-possibilities-texts animate-item">
+                  <h2 class="u-block-title">Добавляйте себя и друзей</h2>
+                  <p class="u-block-text">
+                    Создавайте вместе. С функцией персонажей вы и ваши друзья
+                    можете «сниматься» в видео. Вы полностью контролируете, как
+                    и когда используется ваш персонаж
+                  </p>
+                </div>
+              </div>
+
+              <div class="u-possibilities-column G-align-center">
+                <div class="u-possibilities-texts animate-item">
+                  <h2 class="u-block-title">Ремиксуйте всё</h2>
+                  <p class="u-block-text">
+                    Берите чужие работы и добавляйте своё видение. Меняйте
+                    персонажей, атмосферу, добавляйте новые сцены или
+                    продолжайте историю
+                  </p>
+                </div>
+
+                <div class="u-possibilities-swiper-block animate-item">
+                  <div class="u-possibilities-swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="u-possibilities-slide">
+                          <div class="u-possibilities-slide-img G-flex">
+                            <img
+                              src="assets/images/uPossibilitiesSlide.webp"
+                              alt="photo"
+                              loading="lazy"
+                              width="274"
+                              height="494"
+                            />
+                          </div>
+
+                          <a
+                            href="#"
+                            class="u-possibilities-link u-possibilities-slide-link--one G-align-center"
+                          >
+                            <span
+                              >Один общий кадр: @daniel и @minnia работают
+                              вместе в унылом офисе с серыми кабинками, но
+                              Даниэль отвечает только мяуканьем |</span
+                            >
+                            <div class="u-possibilities-link-icon G-center">
+                              <i class="icon icon-UarrowLeft"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="u-possibilities-slide">
+                          <div class="u-possibilities-slide-img G-flex">
+                            <img
+                              src="assets/images/uPossibilitiesSlide2.webp"
+                              alt="photo"
+                              loading="lazy"
+                              width="274"
+                              height="494"
+                            />
+                          </div>
+
+                          <a
+                            href="#"
+                            class="u-possibilities-link u-possibilities-slide-link--two G-align-center"
+                          >
+                            <span>Он в полном кошачьем костюме и гриме |</span>
+                            <div class="u-possibilities-link-icon G-center">
+                              <i class="icon icon-UarrowLeft"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="u-possibilities-slide">
+                          <div class="u-possibilities-slide-img G-flex">
+                            <img
+                              src="assets/images/uPossibilitiesSlide3.webp"
+                              alt="photo"
+                              loading="lazy"
+                              width="274"
+                              height="494"
+                            />
+                          </div>
+
+                          <a
+                            href="#"
+                            class="u-possibilities-link u-possibilities-slide-link--tree G-align-center"
+                          >
+                            <span>Он на самом деле кот и только мяукает |</span>
+                            <div class="u-possibilities-link-icon G-center">
+                              <i class="icon icon-UarrowLeft"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="u-possibilities-slide">
+                          <div class="u-possibilities-slide-img G-flex">
+                            <img
+                              src="assets/images/uPossibilitiesSlide4.webp"
+                              alt="photo"
+                              loading="lazy"
+                              width="274"
+                              height="494"
+                            />
+                          </div>
+
+                          <a
+                            href="#"
+                            class="u-possibilities-link u-possibilities-slide-link--two G-align-center"
+                          >
+                            <span>Сделай её тоже котом |</span>
+                            <div class="u-possibilities-link-icon G-center">
+                              <i class="icon icon-UarrowLeft"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="u-possibilities-pagination swiper-pagination"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="u-add-sound-section">
+          <div class="u-add-sound-body">
+            <div class="container">
+              <div class="u-add-sound-titles fade-top">
+                <h3 class="u-block-title">Добавьте звук</h3>
+                <p class="u-block-text">
+                  Музыка, звуковые эффекты и диалоги автоматически добавляются в
+                  видео, делая каждую сцену завершённой
+                </p>
+              </div>
+            </div>
+
+            <div class="u-add-sound-swiper-block fade-bottom">
+              <div class="u-add-sound-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="u-sound-slide">
+                      <div class="u-sound-slide-img G-flex">
+                        <img
+                          src="assets/images/uSoundSlideImg.webp"
+                          alt="photo"
+                          loading="lazy"
+                          width="274"
+                          height="494"
+                        />
+                      </div>
+                      <a class="turn-sound G-align-center" href="#">
+                        <span>Включить звук</span>
+                        <div class="turn-sound-icon G-flex">
+                          <img
+                            src="assets/images/turnSoundIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="24"
+                            height="24"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="u-sound-slide">
+                      <div class="u-sound-slide-img G-flex">
+                        <img
+                          src="assets/images/uSoundSlideImg2.webp"
+                          alt="photo"
+                          loading="lazy"
+                          width="274"
+                          height="494"
+                        />
+                      </div>
+                      <a class="turn-sound G-align-center" href="#">
+                        <span>Включить звук</span>
+                        <div class="turn-sound-icon G-flex">
+                          <img
+                            src="assets/images/turnSoundIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="24"
+                            height="24"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="u-sound-slide">
+                      <div class="u-sound-slide-img G-flex">
+                        <img
+                          src="assets/images/uSoundSlideImg3.webp"
+                          alt="photo"
+                          loading="lazy"
+                          width="274"
+                          height="494"
+                        />
+                      </div>
+                      <a class="turn-sound G-align-center" href="#">
+                        <span>Включить звук</span>
+                        <div class="turn-sound-icon G-flex">
+                          <img
+                            src="assets/images/turnSoundIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="24"
+                            height="24"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="u-sound-slide">
+                      <div class="u-sound-slide-img G-flex">
+                        <img
+                          src="assets/images/uSoundSlideImg4.webp"
+                          alt="photo"
+                          loading="lazy"
+                          width="274"
+                          height="494"
+                        />
+                      </div>
+                      <a class="turn-sound G-align-center" href="#">
+                        <span>Включить звук</span>
+                        <div class="turn-sound-icon G-flex">
+                          <img
+                            src="assets/images/turnSoundIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="24"
+                            height="24"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="u-sound-slide">
+                      <div class="u-sound-slide-img G-flex">
+                        <img
+                          src="assets/images/uSoundSlideImg5.webp"
+                          alt="photo"
+                          loading="lazy"
+                          width="274"
+                          height="494"
+                        />
+                      </div>
+                      <a class="turn-sound G-align-center" href="#">
+                        <span>Включить звук</span>
+                        <div class="turn-sound-icon G-flex">
+                          <img
+                            src="assets/images/turnSoundIcon.svg"
+                            alt="photo"
+                            loading="lazy"
+                            width="24"
+                            height="24"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="u-trust-section">
+          <div class="container">
+            <div class="u-trust-body animate-item G-column-center">
+              <a class="u-trust-logo G-flex" href="#">
+                <img
+                  src="assets/images/soraLogo.svg"
+                  decoding="async"
+                  loading="eager"
+                  fetchpriority="high"
+                  alt="logo"
+                  width="65"
+                  height="65"
+                />
+              </a>
+              <h4>Новый сайт Sora</h4>
+
+              <a class="u-primary-btn u-trust-btn G-align-center" href="#">
+                <i class="icon icon-stash_arrow-up"></i>
+
+                <span>Попробовать бесплатно</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="u-footer">
+        <div class="container">
+          <div class="u-footer-body animate-item G-align-center">
+            <a href="index.html" class="u-footer-logo G-flex">
+              <img
+                src="assets/images/UFooterLogo.svg"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+                alt="logo"
+                width="93"
+                height="26"
+                style="width: 100%; height: auto"
+              />
+            </a>
+            <div class="u-footer-texts G-align-center">
+              <p>© 2025 Sora, Inc.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
